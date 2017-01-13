@@ -1,0 +1,19 @@
+This is supposed to be a space-cyber shooter. Like Tron. There really is no
+story in the game. There is a single gun, but it has 3 modes of fire and
+unlimited ammo. The objective of the game is just to survive wave after wace
+and unlock new areas of the map like CoD: Zombies. The enemy creatures and the
+environment should have a low-poly look. They do not need to be textured.
+There will also be nice filters over everything so that it looks more
+artistic. When the player takes damage the screen will glitch out on
+progrssively become worse. There will be a settings menu where the player can
+choose want filter style they want: Win92, AppleII, Commodore64, and so on.
+The music she be background wubs, like "Violence (Alternate)" and 
+"Ultraviolence" from the Doom (2016) OST but replace the guitar riffs with some
+electronic instrument. The game throws your right into the action from the
+start. When you die you are shown how long you lived "Time Compiled:" and how
+many enemies you destroyed "Terrums Defractured:". The enemies are called
+Terums. This is because they are not from Earth (the name means the opposite I
+know). The map is all on giant spheres, like mini planets, and the player's
+gravity is tied to them. Progressive maps have more obstacles. When a map is
+cleared, a one-way portal to the next one appears and the player continues on.
+The skybox is always stars.
