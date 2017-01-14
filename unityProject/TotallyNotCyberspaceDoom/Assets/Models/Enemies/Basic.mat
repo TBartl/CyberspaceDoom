@@ -120,7 +120,7 @@ Material:
       second: 1
     - first:
         name: _rim_power
-      second: 0.5
+      second: 0.15
     m_Colors:
     - first:
         name: _Color
