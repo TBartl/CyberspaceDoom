@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class gravityBody : MonoBehaviour {
 
-	public gravityAttractor att;
+	public gravityAttractor planet;
+	Rigidbody rigi;
 
-	// Use this for initialization
 	void Start () {
-		
+		rigi = gameObject.GetComponent<Rigidbody>();
+		rigi.useGravity = false;
+		rigi.constraints = RigidbodyConstraints.FreezeRotation;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
+	void FixedUpdate() {
+		planet.GravPull(transform);
 	}
 }
