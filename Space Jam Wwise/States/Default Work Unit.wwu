@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7799CB02-96F6-4260-B6F7-1AFD1050C1B8}" SchemaVersion="75">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{7799CB02-96F6-4260-B6F7-1AFD1050C1B8}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Planets" ID="{0A696B84-45A5-4E1D-862A-8941963415BF}">
+					<ChildrenList>
+						<State Name="None" ID="{A8E0E8FE-4A09-4B83-93ED-3F43F6F463BC}"/>
+						<State Name="Rain" ID="{8EC3CE38-E3C2-4DBA-8B46-6C9FEE41D2C3}"/>
+						<State Name="Ice" ID="{91EABC32-73CF-4D0F-96C2-6306D51AD1BD}"/>
+						<State Name="Shadow" ID="{7DBABD39-7DE9-4883-9619-9A0315ADED08}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
