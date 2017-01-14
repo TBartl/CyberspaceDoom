@@ -36,12 +36,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4216500326762580}
-  - component: {fileID: 33068535402812698}
   - component: {fileID: 135281531537447630}
-  - component: {fileID: 23262153531598560}
   - component: {fileID: 54450051977634162}
   - component: {fileID: 114196701589159674}
   - component: {fileID: 114282339321290972}
+  - component: {fileID: 114221869326989460}
   m_Layer: 10
   m_Name: bullet
   m_TagString: Bullet
@@ -107,44 +106,6 @@ Transform:
   m_Father: {fileID: 4216500326762580}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23262153531598560
-MeshRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1374383278245078}
-  m_Enabled: 0
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!33 &33068535402812698
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1374383278245078}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &54450051977634162
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -174,6 +135,18 @@ MonoBehaviour:
   timeTillDeactivate: 3
   explosionPrefab: {fileID: 1652382227164502, guid: cc8587297af5c144590b7eb1512a2483,
     type: 2}
+--- !u!114 &114221869326989460
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1374383278245078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41197970c8b8ffb4f9299b59fb293747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lastVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &114282339321290972
 MonoBehaviour:
   m_ObjectHideFlags: 1
