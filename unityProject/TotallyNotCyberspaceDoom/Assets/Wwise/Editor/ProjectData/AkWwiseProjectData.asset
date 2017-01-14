@@ -13,28 +13,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
-  - PhysicalPath: Events\Default Work Unit.wwu
+  - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{5055283F-1BD9-4065-BD06-E03AEDDC8BD1}'
-    m_lastTimePsrt1: 944630897
-    m_lastTimePart2: -1999356904
+    m_lastTimePsrt1: -1417015808
+    m_lastTimePart2: -1999356876
     List: []
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D719BD71-1F27-4EB1-86C1-D703E5A2C9F9}'
-    m_lastTimePsrt1: 944736160
-    m_lastTimePart2: -1999356904
+    m_lastTimePsrt1: -1417015808
+    m_lastTimePart2: -1999356876
     List: []
   StateWwu:
-  - PhysicalPath: States\Default Work Unit.wwu
+  - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{7799CB02-96F6-4260-B6F7-1AFD1050C1B8}'
-    m_lastTimePsrt1: 945222457
-    m_lastTimePart2: -1999356904
+    m_lastTimePsrt1: -1417015808
+    m_lastTimePart2: -1999356876
     List:
     - Name: Planets
-      Path: Default Work Unit\Planets
+      Path: Default Work Unit/Planets
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -63,18 +63,18 @@ MonoBehaviour:
       - bytes: 38cec38ec2e3ba4d8b466c9fee41d2c3
       - bytes: 39bdba7de97d834896199a0315aded08
   SwitchWwu:
-  - PhysicalPath: Switches\Default Work Unit.wwu
+  - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{2458A0AB-62C0-46D1-8FFD-23028BB16ECA}'
-    m_lastTimePsrt1: 945257550
-    m_lastTimePart2: -1999356904
+    m_lastTimePsrt1: -1417015808
+    m_lastTimePart2: -1999356876
     List: []
   BankWwu:
-  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A6837174-422B-45B7-B2EE-1DB92D881644}'
-    m_lastTimePsrt1: 944956751
-    m_lastTimePart2: -1999356904
+    m_lastTimePsrt1: -1417015808
+    m_lastTimePart2: -1999356876
     List: []
   ExpandedItems:
   - /Space Jam Wwise

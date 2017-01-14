@@ -549,6 +549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planet: {fileID: 0}
+  gravity: -10
 --- !u!114 &114362120456248680
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -572,6 +573,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 804d5931ac1b04bbebec4e75fd13087e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  muzzleOpening: {fileID: 0}
+  bulletForce: 0
+  timeBetweenShots: 0
+  bullet: {fileID: 0}
+  bullets: []
+  pooledBullets: 0
 --- !u!114 &114928701061888254
 MonoBehaviour:
   m_ObjectHideFlags: 1
