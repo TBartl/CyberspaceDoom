@@ -5,6 +5,7 @@ Shader "OC_Character"
 _Vertex_color("_Vertex_color", Color) = (1,1,1,1)
 _rim_power("_rim_power", Range(0,1) ) = 0.5
 _rim_color("_rim_color", Color) = (1,1,1,1)
+_vertOverride("_vertOverride", Color) = (1,1,1,1)
 
 	}
 	
@@ -34,7 +35,8 @@ Fog{
 
 float4 _Vertex_color;
 float _rim_power;
-float4 _rim_color;
+float4 _rim_color; 
+float4 _vertOverride;
 
 			struct EditorSurfaceOutput {
 				half3 Albedo;
@@ -103,7 +105,7 @@ float4 Fresnel0_1_NoInput = float4(0,0,1,1);
 float4 Fresnel0=(1.0 - dot( normalize( float4( IN.viewDir.x, IN.viewDir.y,IN.viewDir.z,1.0 ).xyz), normalize( Fresnel0_1_NoInput.xyz ) )).xxxx;
 float4 Pow0=pow(Fresnel0,_rim_power.xxxx);
 float4 Multiply5=Pow0 * _rim_color;
-float4 Multiply2=_Vertex_color * IN.color;
+float4 Multiply2=_Vertex_color* IN.color.r;
 float4 Multiply4=Multiply5 * Multiply2;
 float4 Master0_0_NoInput = float4(0,0,0,0);
 float4 Master0_1_NoInput = float4(0,0,1,1);
