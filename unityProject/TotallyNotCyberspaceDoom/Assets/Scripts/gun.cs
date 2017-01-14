@@ -74,6 +74,7 @@ public class gun : MonoBehaviour {
 
 				//fire
 				Rigidbody fam = bulletList[i].GetComponent<Rigidbody>();
+				fam.velocity = Vector3.zero;
 				fam.AddForce(-muzzleOpening.forward * bulletForce);
 				break;
 			}
