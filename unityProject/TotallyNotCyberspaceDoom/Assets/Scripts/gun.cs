@@ -13,6 +13,8 @@ public class gun : MonoBehaviour {
 	Animator anim;
 	public Transform muzzleOpening;
 	public float bulletForce;
+	public float timeBetweenShots;
+	float tempShotTime;
 
 	public GameObject bullet;
 	public GameObject[] bullets;
@@ -23,14 +25,16 @@ public class gun : MonoBehaviour {
 
 	void Awake() {
 		anim = GetComponent<Animator>();
-
+		tempShotTime = timeBetweenShots;
 		PoolBullets();
 	}
 
 	void Update() {
-		if (Input.GetButton("Fire1")) {
+		tempShotTime -= Time.deltaTime;
+		if (Input.GetButton("Fire1") && tempShotTime <= 0) {
 			anim.SetTrigger("fire");
 			GrabBullet();
+			tempShotTime = timeBetweenShots;
 		}
 	}
 
@@ -71,8 +75,6 @@ public class gun : MonoBehaviour {
 				//fire
 				Rigidbody fam = bulletList[i].GetComponent<Rigidbody>();
 				fam.AddForce(-muzzleOpening.forward * bulletForce);
-
-
 				break;
 			}
 		}

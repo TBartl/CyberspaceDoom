@@ -197,6 +197,11 @@ Prefab:
       value: 
       objectReference: {fileID: 1374383278245078, guid: 2cf0a22fc407746a6985b44bb937a37d,
         type: 2}
+    - target: {fileID: 114610456608315456, guid: 1392523ae17814328a164bfd84f88c49,
+        type: 2}
+      propertyPath: timeBetweenShots
+      value: 0.13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1392523ae17814328a164bfd84f88c49, type: 2}
   m_IsPrefabParent: 0
