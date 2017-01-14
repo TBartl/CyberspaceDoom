@@ -53,6 +53,7 @@ GameObject:
   - component: {fileID: 54913565739742352}
   - component: {fileID: 114987416084248834}
   - component: {fileID: 114167903413076954}
+  - component: {fileID: 114610955467290392}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -174,7 +175,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1076493504490486}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.29, y: 41, z: 0}
+  m_LocalPosition: {x: 2.9, y: 19.2, z: -50.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4470017538464006}
@@ -269,7 +270,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1241326611513842}
-  m_LocalRotation: {x: 0.33128884, y: -0.33128875, z: 0.62469816, w: 0.62469804}
+  m_LocalRotation: {x: 0.33128887, y: -0.33128878, z: 0.6246982, w: 0.6246981}
   m_LocalPosition: {x: -0, y: 1.5160992, z: 0}
   m_LocalScale: {x: 1.0000001, y: 1, z: 1}
   m_Children:
@@ -350,9 +351,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mesh: {fileID: 4470017538464006}
-  aggroRadius: 10
+  aggroRadius: 7
   speed: 10
   rotationSpeed: 5
+--- !u!114 &114610955467290392
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1076493504490486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393b3bc0030727f4a85ab0326476b0b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 30
+  knockbackDist: 10
 --- !u!114 &114987416084248834
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -364,14 +378,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34f23eda405204e6fa33417a66832507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planet: {fileID: 0}
+  gravity: -10
 --- !u!135 &135400012071622536
 SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1076493504490486}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 4897141f47e837445b6acf7187ecafb9, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2

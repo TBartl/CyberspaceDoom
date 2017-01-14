@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class gravityBody : MonoBehaviour {
-
-	public gravityAttractor planet;
 	public float gravity = -10f;
 
 	Rigidbody rigi;
@@ -16,6 +14,11 @@ public class gravityBody : MonoBehaviour {
 	}
 	
 	void FixedUpdate() {
-		planet.GravPull(transform, gravity);
+		Vector3 targetDir = (transform.position).normalized;
+		Vector3 bodyUp = transform.up;
+		
+		rigi.AddForce(bodyUp * gravity);
+		transform.rotation = Quaternion.FromToRotation(bodyUp, targetDir) * transform.rotation;
+		rigi.AddForce(targetDir * gravity);
 	}
 }
