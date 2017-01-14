@@ -203,6 +203,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &314528186 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 96c4a3fb6f65e41ff9ff98d19df869f9, type: 3}
+  m_PrefabInternal: {fileID: 375314209}
+--- !u!114 &314528187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 314528186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 804d5931ac1b04bbebec4e75fd13087e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
 --- !u!1001 &375314209
 Prefab:
   m_ObjectHideFlags: 0
@@ -262,6 +278,10 @@ Prefab:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 96c4a3fb6f65e41ff9ff98d19df869f9, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ca53517e7d0bd4dacbc9a4454043476b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 96c4a3fb6f65e41ff9ff98d19df869f9, type: 3}
   m_IsPrefabParent: 0
