@@ -55,7 +55,7 @@ public class BasicEnemy : MonoBehaviour {
 	IEnumerator Chase() {
 		chasing = true;
 		while (true) {
-			Vector3 newVelocity = (targetPlayer.position - transform.position).normalized * speed;
+			Vector3 newVelocity = (targetPlayer.position - transform.position + targetPlayer.up).normalized * speed;
 			rigid.velocity = newVelocity;
 			yield return null;
 		}
