@@ -130,7 +130,7 @@ Material:
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _Vertex_color
-      second: {r: 0, g: 0.7103448, b: 1, a: 1}
+      second: {r: 1, g: 0, b: 0.76551723, a: 1}
     - first:
         name: _rim_color
       second: {r: 1, g: 1, b: 1, a: 1}
