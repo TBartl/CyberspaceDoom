@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Monolith1
+  m_Name: Monolith
   m_Shader: {fileID: 4800000, guid: bd14ecb7e9853c24394e160c5aae634f, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
@@ -120,7 +120,7 @@ Material:
       second: 1
     - first:
         name: _rim_power
-      second: 0.5
+      second: 0.3
     m_Colors:
     - first:
         name: _Color
@@ -130,7 +130,7 @@ Material:
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _Vertex_color
-      second: {r: 1, g: 1, b: 1, a: 1}
+      second: {r: 0.5724138, g: 1, b: 0, a: 1}
     - first:
         name: _rim_color
       second: {r: 1, g: 1, b: 1, a: 1}

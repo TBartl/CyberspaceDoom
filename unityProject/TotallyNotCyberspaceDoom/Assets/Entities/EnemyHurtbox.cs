@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyHurtbox : MonoBehaviour {
-	SkinnedMeshRenderer mr;
+	Renderer mr;
 	Color originalColor;
+	public int health;
 	public float knockbackDist = .5f;
 
 
 	// Use this for initialization
 	void Start () {
-		mr = GetComponentInChildren<SkinnedMeshRenderer>();
+		mr = GetComponentInChildren<Renderer>();
 		originalColor = mr.material.GetColor("_Vertex_color");
 		
 	}
@@ -22,6 +23,11 @@ public class EnemyHurtbox : MonoBehaviour {
 
 	void OnCollisionEnter(Collision collision) {
 		if (collision.collider.tag == "Bullet") {
+			health -= 1;
+			if (health <= 0) {
+				Destroy(this.gameObject);
+				return;
+			}
 			StartCoroutine(FlashRed());
 			StartCoroutine(Knockback(collision.collider.GetComponent<LastVelocity>().lastVelocity.normalized));
 
