@@ -26,10 +26,6 @@
 				<Event Id="51683977" Name="Shotgun" ObjectPath="\Events\Default Work Unit\Shotgun"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="107581637" Language="SFX">
-					<ShortName>Pistol3.wav</ShortName>
-					<Path>SFX/Pistol3_9E69E797.wem</Path>
-				</File>
 				<File Id="161480498" Language="SFX">
 					<ShortName>LaserBeam1.wav</ShortName>
 					<Path>SFX/LaserBeam1_9E69E797.wem</Path>
@@ -145,6 +141,10 @@
 				<File Id="838238911" Language="SFX">
 					<ShortName>SnowFootstep4.wav</ShortName>
 					<Path>SFX/SnowFootstep4_9E69E797.wem</Path>
+				</File>
+				<File Id="850928140" Language="SFX">
+					<ShortName>PistolFireLaunch.wav</ShortName>
+					<Path>SFX/PistolFireLaunch_9E69E797.wem</Path>
 				</File>
 				<File Id="856116723" Language="SFX">
 					<ShortName>ambience2.wav</ShortName>

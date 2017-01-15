@@ -254,8 +254,8 @@
 									<Modifier Name="" ID="{0CE327CB-8F11-43E6-822D-D1C5E8488E30}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="16"/>
-											<Property Name="Min" Type="Real64" Value="-19"/>
+											<Property Name="Max" Type="Real64" Value="9"/>
+											<Property Name="Min" Type="Real64" Value="-12"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -268,7 +268,7 @@
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
 											<Property Name="Max" Type="Real64" Value="606"/>
-											<Property Name="Min" Type="Real64" Value="-531"/>
+											<Property Name="Min" Type="Real64" Value="-51"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -289,7 +289,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Pistol3" ID="{D4F43AD7-7504-46C5-AC12-09926651D329}" ShortID="189267327" Type="SoundFX">
+						<Sound Name="PistolFireLaunch" ID="{28B6EAA5-C02D-42E7-B68B-0D20904D3FD8}" ShortID="304804421" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B1FD8F3-2151-4125-9DF8-19D22D51674D}"/>
@@ -299,13 +299,13 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Pistol3" ID="{7397DAD8-5E12-47E7-B708-1E50B079E33D}" ShortID="107581637">
+								<AudioFileSource Name="PistolFireLaunch" ID="{CED7E76B-C562-4C5A-9E90-67C3B666869D}" ShortID="850928140">
 									<Language>SFX</Language>
-									<AudioFile>Pistol3.wav</AudioFile>
+									<AudioFile>PistolFireLaunch.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Pistol3" ID="{7397DAD8-5E12-47E7-B708-1E50B079E33D}" Platform="Linked"/>
+								<ActiveSource Name="PistolFireLaunch" ID="{CED7E76B-C562-4C5A-9E90-67C3B666869D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -715,7 +715,7 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
-				<RandomSequenceContainer Name="IceFootsteps" ID="{F3FCFD11-331B-452E-A0FA-9B91E1F0B08F}" ShortID="993988623">
+				<RandomSequenceContainer Name="Footsteps" ID="{F3FCFD11-331B-452E-A0FA-9B91E1F0B08F}" ShortID="993988623">
 					<PropertyList>
 						<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 						<Property Name="Lowpass" Type="int16">
@@ -941,6 +941,25 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="Pistol3" ID="{D4F43AD7-7504-46C5-AC12-09926651D329}" ShortID="189267327" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B1FD8F3-2151-4125-9DF8-19D22D51674D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D719BD71-1F27-4EB1-86C1-D703E5A2C9F9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Pistol3" ID="{7397DAD8-5E12-47E7-B708-1E50B079E33D}" ShortID="107581637">
+							<Language>SFX</Language>
+							<AudioFile>Pistol3.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Pistol3" ID="{7397DAD8-5E12-47E7-B708-1E50B079E33D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
