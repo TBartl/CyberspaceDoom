@@ -47,6 +47,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Set_State" ID="{3943B413-FEDE-4091-8F93-0442597EEB35}">
+					<ChildrenList>
+						<Action Name="Set State" ID="{57D18DB3-05E5-4B2D-9844-26AD5D4060FF}" ShortID="482826733" Type="SetState" Scope="All" Global="true"/>
+					</ChildrenList>
+				</Event>
+				<Event Name="SetSwitch" ID="{143B03F6-18A1-4137-8C7A-F48F7E3B9E9C}">
+					<ChildrenList>
+						<Action Name="Set Switch" ID="{A7F297AC-D0EA-4A52-87F1-865D6E956715}" ShortID="990358133" Type="SetSwitch" Scope="All" Global="false">
+							<SetItemParam>
+								<Group Name="Ambiences" ID="{92502CF5-032A-4755-B53A-AE179BB63B53}"/>
+								<GroupItem Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
+							</SetItemParam>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="75">
-	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3574960000" DateHigh="30568125"/>
+	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1160843008" DateHigh="30568152"/>
 	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Attenuations\Default Work Unit.wwu" DateLow="3574960000" DateHigh="30568125"/>
 	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Audio Devices\Default Work Unit.wwu" DateLow="3574960000" DateHigh="30568125"/>
 	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="3574960000" DateHigh="30568125"/>
@@ -9,20 +9,20 @@
 	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="3574960000" DateHigh="30568125"/>
 	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Effects\Default Work Unit.wwu" DateLow="3574960000" DateHigh="30568125"/>
 	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Effects\Factory Effects.wwu" DateLow="3574960000" DateHigh="30568125"/>
-	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Events\Default Work Unit.wwu" DateLow="3574960000" DateHigh="30568125"/>
+	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Events\Default Work Unit.wwu" DateLow="770843008" DateHigh="30568152"/>
 	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Game Parameters\Default Work Unit.wwu" DateLow="3574960000" DateHigh="30568125"/>
-	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="3574960000" DateHigh="30568125"/>
+	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="770843008" DateHigh="30568152"/>
 	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3574960000" DateHigh="30568125"/>
 	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Mixing Sessions\Default Work Unit.wwu" DateLow="3574960000" DateHigh="30568125"/>
 	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Modulators\Default Work Unit.wwu" DateLow="3574960000" DateHigh="30568125"/>
 	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Presets\Default Work Unit.wwu" DateLow="3584960000" DateHigh="30568125"/>
 	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Queries\Default Work Unit.wwu" DateLow="3584960000" DateHigh="30568125"/>
 	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Queries\Factory Queries.wwu" DateLow="3584960000" DateHigh="30568125"/>
-	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\SoundBanks\Default Work Unit.wwu" DateLow="3584960000" DateHigh="30568125"/>
+	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\SoundBanks\Default Work Unit.wwu" DateLow="2010188928" DateHigh="30568132"/>
 	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3584960000" DateHigh="30568125"/>
-	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Space Jam Wwise.crossover.wsettings" DateLow="760123520" DateHigh="30568130"/>
+	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Space Jam Wwise.crossover.wsettings" DateLow="540254336" DateHigh="30568134"/>
 	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Space Jam Wwise.wproj" DateLow="1828746240" DateHigh="30567935"/>
 	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\States\Default Work Unit.wwu" DateLow="3584960000" DateHigh="30568125"/>
-	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Switches\Default Work Unit.wwu" DateLow="2880123520" DateHigh="30568130"/>
+	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Switches\Default Work Unit.wwu" DateLow="2010188928" DateHigh="30568132"/>
 	<ValidationCacheItem File="Y:\Documents\spacejamu\Space Jam Wwise\Triggers\Default Work Unit.wwu" DateLow="3584960000" DateHigh="30568125"/>
 </ValidationCache>

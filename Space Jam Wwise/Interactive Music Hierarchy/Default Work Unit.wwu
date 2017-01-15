@@ -16,7 +16,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<MusicPlaylistContainer Name="Ice Theme" ID="{7508627E-2EED-4847-B647-14B3E8F9B96A}" ShortID="51249472">
+						<MusicPlaylistContainer Name="Rain Theme" ID="{7508627E-2EED-4847-B647-14B3E8F9B96A}" ShortID="51249472">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B1FD8F3-2151-4125-9DF8-19D22D51674D}"/>
@@ -574,7 +574,7 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
-						<MusicPlaylistContainer Name="Rain Theme" ID="{0E4300C8-C148-4AC0-8ACB-9D43F7C376D3}" ShortID="648281762">
+						<MusicPlaylistContainer Name="Ice Theme" ID="{0E4300C8-C148-4AC0-8ACB-9D43F7C376D3}" ShortID="648281762">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B1FD8F3-2151-4125-9DF8-19D22D51674D}"/>
@@ -2142,6 +2142,13 @@
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Planets" ID="{0A696B84-45A5-4E1D-862A-8941963415BF}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+					</StateInfo>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{80D4747B-A641-471C-B239-1ED85B34C0CE}">
 							<PropertyList>
@@ -2159,10 +2166,10 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="Rain Theme" ID="{0E4300C8-C148-4AC0-8ACB-9D43F7C376D3}" WorkUnitID="{CB478AD5-F4ED-48C6-A48E-009B2E64F62A}"/>
+											<ObjectRef Name="Ice Theme" ID="{0E4300C8-C148-4AC0-8ACB-9D43F7C376D3}" WorkUnitID="{CB478AD5-F4ED-48C6-A48E-009B2E64F62A}"/>
 										</Reference>
 										<Reference Name="SourceContextObject">
-											<ObjectRef Name="Ice Theme" ID="{7508627E-2EED-4847-B647-14B3E8F9B96A}" WorkUnitID="{CB478AD5-F4ED-48C6-A48E-009B2E64F62A}"/>
+											<ObjectRef Name="Rain Theme" ID="{7508627E-2EED-4847-B647-14B3E8F9B96A}" WorkUnitID="{CB478AD5-F4ED-48C6-A48E-009B2E64F62A}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
@@ -2176,7 +2183,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="SourceContextObject">
-											<ObjectRef Name="Rain Theme" ID="{0E4300C8-C148-4AC0-8ACB-9D43F7C376D3}" WorkUnitID="{CB478AD5-F4ED-48C6-A48E-009B2E64F62A}"/>
+											<ObjectRef Name="Ice Theme" ID="{0E4300C8-C148-4AC0-8ACB-9D43F7C376D3}" WorkUnitID="{CB478AD5-F4ED-48C6-A48E-009B2E64F62A}"/>
 										</Reference>
 									</ReferenceList>
 									<TransitionInfo>
@@ -2196,7 +2203,7 @@
 								<PathElementRef Name="Ice" ID="{91EABC32-73CF-4D0F-96C2-6306D51AD1BD}"/>
 							</Path>
 							<AudioNodeInfo>
-								<AudioNodeRef Name="Ice Theme" ID="{7508627E-2EED-4847-B647-14B3E8F9B96A}" WorkUnitID="{CB478AD5-F4ED-48C6-A48E-009B2E64F62A}" Platform="Linked"/>
+								<AudioNodeRef Name="Rain Theme" ID="{7508627E-2EED-4847-B647-14B3E8F9B96A}" WorkUnitID="{CB478AD5-F4ED-48C6-A48E-009B2E64F62A}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 						<Entry>
@@ -2204,7 +2211,7 @@
 								<PathElementRef Name="Rain" ID="{8EC3CE38-E3C2-4DBA-8B46-6C9FEE41D2C3}"/>
 							</Path>
 							<AudioNodeInfo>
-								<AudioNodeRef Name="Rain Theme" ID="{0E4300C8-C148-4AC0-8ACB-9D43F7C376D3}" WorkUnitID="{CB478AD5-F4ED-48C6-A48E-009B2E64F62A}" Platform="Linked"/>
+								<AudioNodeRef Name="Ice Theme" ID="{0E4300C8-C148-4AC0-8ACB-9D43F7C376D3}" WorkUnitID="{CB478AD5-F4ED-48C6-A48E-009B2E64F62A}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 						<Entry>

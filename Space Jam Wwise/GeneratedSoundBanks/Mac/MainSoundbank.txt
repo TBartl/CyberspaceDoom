@@ -13,9 +13,8 @@ Switch	ID	Name	Switch Group			Notes
 	3140781661	Shadow	Footsteps			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	107581637	Pistol3	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Mac\SFX\Pistol3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pistol\Pistol3		57292
 	161480498	LaserBeam1	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Mac\SFX\LaserBeam1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Laser\LaserBeam1		419000
-	162266728	LaserPistol2	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Mac\SFX\LaserPistol2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pistol\LaserPistol2		127756
-	510084522	LaserPistol1	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Mac\SFX\LaserPistol1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pistol\LaserPistol1		176544
 	545781998	LaserShotgunNoTail	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Mac\SFX\LaserShotgunNoTail_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shotgun\LaserShotgunNoTail		149072
 	807596079	LaserShotgun2	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Mac\SFX\LaserShotgun2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shotgun\LaserShotgun2		159088
 

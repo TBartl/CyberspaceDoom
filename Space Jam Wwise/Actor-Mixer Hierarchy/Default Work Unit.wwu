@@ -261,30 +261,10 @@
 								</Reference>
 							</ReferenceList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Snow" ID="{064E2D97-169B-4462-9F31-E26E93A1F608}" ShortID="651182757">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B1FD8F3-2151-4125-9DF8-19D22D51674D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D719BD71-1F27-4EB1-86C1-D703E5A2C9F9}"/>
-								</Reference>
-							</ReferenceList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Concrete" ID="{85207CC4-21FE-427E-9BE6-BD7233223EBD}" ShortID="823757556">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B1FD8F3-2151-4125-9DF8-19D22D51674D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D719BD71-1F27-4EB1-86C1-D703E5A2C9F9}"/>
-								</Reference>
-							</ReferenceList>
-						</RandomSequenceContainer>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupRef Name="Footsteps" ID="{FFA55E90-94E5-4A36-AF22-2BE5DC43D252}"/>
-						<DefaultSwitchRef Name="Ice" ID="{B58C524D-C6A0-4AAA-AB53-2FF37D522959}"/>
+						<DefaultSwitchRef Name="Rain" ID="{1EC4AE95-B7FF-428D-86F8-D29C0D84D5D2}"/>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
 								<ItemRef Name="Ice" ID="{F3FCFD11-331B-452E-A0FA-9B91E1F0B08F}"/>
@@ -294,12 +274,6 @@
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Shadow" ID="{9AD2E771-F364-4098-8D50-59876C5764D1}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="Snow" ID="{064E2D97-169B-4462-9F31-E26E93A1F608}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="Concrete" ID="{85207CC4-21FE-427E-9BE6-BD7233223EBD}"/>
 							</GroupingBehavior>
 						</GroupingBehaviorList>
 					</GroupingInfo>
@@ -318,6 +292,59 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="Ice" ID="{51112A79-FD22-4E69-AE97-B7658A0CA468}" ShortID="1037127268">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C08D5A2F-0F15-41DE-94E1-B8D802714740}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="8"/>
+													<Property Name="Min" Type="Real64" Value="-10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{6BE492BF-8449-416F-9FA3-538C89DF049B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="8"/>
+													<Property Name="Min" Type="Real64" Value="-9"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8EC33550-A561-424B-A9AB-3B37AABC90C4}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="354"/>
+													<Property Name="Min" Type="Real64" Value="-278"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B1FD8F3-2151-4125-9DF8-19D22D51674D}"/>
@@ -326,6 +353,65 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D719BD71-1F27-4EB1-86C1-D703E5A2C9F9}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SnowAmbience1" ID="{B86FBC9D-C565-461E-8A5B-A1DE9B59C47F}" ShortID="598114365" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B1FD8F3-2151-4125-9DF8-19D22D51674D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D719BD71-1F27-4EB1-86C1-D703E5A2C9F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SnowAmbience1" ID="{7B88F496-4DC8-4033-AE85-31D34406C276}" ShortID="251053522">
+											<Language>SFX</Language>
+											<AudioFile>SnowAmbience1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SnowAmbience1" ID="{7B88F496-4DC8-4033-AE85-31D34406C276}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SnowAmbience3" ID="{D9866C37-563B-44C9-80D7-F78E071CB883}" ShortID="645037922" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B1FD8F3-2151-4125-9DF8-19D22D51674D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D719BD71-1F27-4EB1-86C1-D703E5A2C9F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SnowAmbience3" ID="{9D5A36CA-C1F9-4D65-9EE0-FE2AFC6EE4B9}" ShortID="582706071">
+											<Language>SFX</Language>
+											<AudioFile>SnowAmbience3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SnowAmbience3" ID="{9D5A36CA-C1F9-4D65-9EE0-FE2AFC6EE4B9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SnowAmbience2" ID="{C8ED8BC6-90D3-44A7-93F8-6592F036EE5A}" ShortID="563154056" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B1FD8F3-2151-4125-9DF8-19D22D51674D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D719BD71-1F27-4EB1-86C1-D703E5A2C9F9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SnowAmbience2" ID="{A6CE8D86-F502-45BF-974E-A61D811FD86F}" ShortID="1030414251">
+											<Language>SFX</Language>
+											<AudioFile>SnowAmbience2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SnowAmbience2" ID="{A6CE8D86-F502-45BF-974E-A61D811FD86F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Rain" ID="{B495226B-34D2-4DAF-9947-448ECB44C04D}" ShortID="489185735">
 							<PropertyList>
@@ -762,6 +848,13 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Laser" ID="{864C51EC-37E0-48E3-80E3-16F957077334}" ShortID="947871977">
+					<PropertyList>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B1FD8F3-2151-4125-9DF8-19D22D51674D}"/>
@@ -794,13 +887,40 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Pistol" ID="{8A7B16BE-0AAE-40FA-9426-F93AAC9D452D}" ShortID="501300195">
 					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{88E72B76-D12D-46EE-A7D7-506FCC24F110}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="14"/>
+											<Property Name="Min" Type="Real64" Value="-16"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{0CE327CB-8F11-43E6-822D-D1C5E8488E30}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="16"/>
+											<Property Name="Min" Type="Real64" Value="-19"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{5464ADD5-7FD6-4B85-B073-619BD826FA56}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Max" Type="Real64" Value="379"/>
+											<Property Name="Max" Type="Real64" Value="606"/>
+											<Property Name="Min" Type="Real64" Value="-531"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -821,7 +941,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="LaserPistol1" ID="{28AA4100-CAD0-412D-AA6C-06501C5C2125}" ShortID="326974094" Type="SoundFX">
+						<Sound Name="Pistol3" ID="{D4F43AD7-7504-46C5-AC12-09926651D329}" ShortID="189267327" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B1FD8F3-2151-4125-9DF8-19D22D51674D}"/>
@@ -831,36 +951,55 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="LaserPistol1" ID="{BE0C6CFA-8FFA-4A13-A8C8-BC89557CB65B}" ShortID="510084522">
+								<AudioFileSource Name="Pistol3" ID="{7397DAD8-5E12-47E7-B708-1E50B079E33D}" ShortID="107581637">
 									<Language>SFX</Language>
-									<AudioFile>LaserPistol1.wav</AudioFile>
+									<AudioFile>Pistol3.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="LaserPistol1" ID="{BE0C6CFA-8FFA-4A13-A8C8-BC89557CB65B}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="LaserPistol2" ID="{59CE784B-FD0E-4C64-8E64-95BA70B4C579}" ShortID="935575072" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B1FD8F3-2151-4125-9DF8-19D22D51674D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D719BD71-1F27-4EB1-86C1-D703E5A2C9F9}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="LaserPistol2" ID="{D3A3BE15-07CF-41B2-9441-1C97111FD93A}" ShortID="162266728">
-									<Language>SFX</Language>
-									<AudioFile>LaserPistol2.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="LaserPistol2" ID="{D3A3BE15-07CF-41B2-9441-1C97111FD93A}" Platform="Linked"/>
+								<ActiveSource Name="Pistol3" ID="{7397DAD8-5E12-47E7-B708-1E50B079E33D}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="LaserPistol1" ID="{28AA4100-CAD0-412D-AA6C-06501C5C2125}" ShortID="326974094" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B1FD8F3-2151-4125-9DF8-19D22D51674D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D719BD71-1F27-4EB1-86C1-D703E5A2C9F9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="LaserPistol1" ID="{BE0C6CFA-8FFA-4A13-A8C8-BC89557CB65B}" ShortID="510084522">
+							<Language>SFX</Language>
+							<AudioFile>LaserPistol1.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="LaserPistol1" ID="{BE0C6CFA-8FFA-4A13-A8C8-BC89557CB65B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="LaserPistol2" ID="{59CE784B-FD0E-4C64-8E64-95BA70B4C579}" ShortID="935575072" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8B1FD8F3-2151-4125-9DF8-19D22D51674D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D719BD71-1F27-4EB1-86C1-D703E5A2C9F9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="LaserPistol2" ID="{D3A3BE15-07CF-41B2-9441-1C97111FD93A}" ShortID="162266728">
+							<Language>SFX</Language>
+							<AudioFile>LaserPistol2.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="LaserPistol2" ID="{D3A3BE15-07CF-41B2-9441-1C97111FD93A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
