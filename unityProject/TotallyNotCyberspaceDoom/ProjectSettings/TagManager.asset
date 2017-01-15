@@ -3,15 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Enemy
-  - planet
-  - Bullet
-<<<<<<< HEAD
-  - Monolith
-=======
-  - progress
->>>>>>> 9845a672a1769261b375992f6153ebf60d88bc48
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -21,10 +13,10 @@ TagManager:
   - UI
   - 
   - 
-  - ground
-  - gun
-  - bullet
-  - RadarOnly
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
