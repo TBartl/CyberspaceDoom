@@ -2203,7 +2203,7 @@
 								<PathElementRef Name="Ice" ID="{91EABC32-73CF-4D0F-96C2-6306D51AD1BD}"/>
 							</Path>
 							<AudioNodeInfo>
-								<AudioNodeRef Name="Rain Theme" ID="{7508627E-2EED-4847-B647-14B3E8F9B96A}" WorkUnitID="{CB478AD5-F4ED-48C6-A48E-009B2E64F62A}" Platform="Linked"/>
+								<AudioNodeRef Name="Ice Theme" ID="{0E4300C8-C148-4AC0-8ACB-9D43F7C376D3}" WorkUnitID="{CB478AD5-F4ED-48C6-A48E-009B2E64F62A}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 						<Entry>
@@ -2211,7 +2211,7 @@
 								<PathElementRef Name="Rain" ID="{8EC3CE38-E3C2-4DBA-8B46-6C9FEE41D2C3}"/>
 							</Path>
 							<AudioNodeInfo>
-								<AudioNodeRef Name="Ice Theme" ID="{0E4300C8-C148-4AC0-8ACB-9D43F7C376D3}" WorkUnitID="{CB478AD5-F4ED-48C6-A48E-009B2E64F62A}" Platform="Linked"/>
+								<AudioNodeRef Name="Rain Theme" ID="{7508627E-2EED-4847-B647-14B3E8F9B96A}" WorkUnitID="{CB478AD5-F4ED-48C6-A48E-009B2E64F62A}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 						<Entry>
@@ -2220,6 +2220,14 @@
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Shadow Theme" ID="{D8566208-3D83-41B4-9E93-F6D00F43F147}" WorkUnitID="{CB478AD5-F4ED-48C6-A48E-009B2E64F62A}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Planets" ID="{0A696B84-45A5-4E1D-862A-8941963415BF}"/>
+							</Path>
+							<AudioNodeInfo>
+								<NoObject Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>

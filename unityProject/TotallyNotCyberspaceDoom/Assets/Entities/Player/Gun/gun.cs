@@ -40,13 +40,13 @@ public class gun : MonoBehaviour {
 
 	void Update() {
 		tempShotTime -= Time.deltaTime;
-		if (Input.GetButton("Fire1") && tempShotTime <= 0) {
+		if (player.rewiredPlayer.GetButton("Shoot1") && tempShotTime <= 0) {
 			anim.SetTrigger("fire");
 			GrabBullet();
 			AkSoundEngine.PostEvent("Pistol", gameObject);
 			tempShotTime = timeBetweenShots;
 		}
-		if (Input.GetButtonDown("Fire2") && canShootShotgun) {
+		if (player.rewiredPlayer.GetButtonDown("Shoot2") && canShootShotgun) {
 			anim.SetTrigger("fire");
 			//Temporary shotgun lol
 			for (int i = 0; i < 20; i++) {
