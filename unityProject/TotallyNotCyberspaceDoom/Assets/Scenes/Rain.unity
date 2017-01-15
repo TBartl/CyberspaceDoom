@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.14424741, g: 0.33823532, b: 0.20632353, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1.37
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SkyboxMaterial: {fileID: 2100000, guid: 06ef7b64bd16e440d98e76e501bfe744, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -105,11 +105,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4546135175727294, guid: 60243819d140a24489feea51e9cc738c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 35.61
+      value: 35.64
       objectReference: {fileID: 0}
     - target: {fileID: 4546135175727294, guid: 60243819d140a24489feea51e9cc738c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 5.84
+      value: 5.2863
       objectReference: {fileID: 0}
     - target: {fileID: 4546135175727294, guid: 60243819d140a24489feea51e9cc738c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -142,6 +142,18 @@ Prefab:
     - target: {fileID: 4546135175727294, guid: 60243819d140a24489feea51e9cc738c, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546135175727294, guid: 60243819d140a24489feea51e9cc738c, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546135175727294, guid: 60243819d140a24489feea51e9cc738c, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4546135175727294, guid: 60243819d140a24489feea51e9cc738c, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60243819d140a24489feea51e9cc738c, type: 2}
@@ -3249,7 +3261,7 @@ ParticleSystem:
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.6666667, g: 1, b: 0, a: 1}
+      maxColor: {r: 1, g: 1, b: 1, a: 1}
       minMaxState: 0
     startSize:
       scalar: 0.1

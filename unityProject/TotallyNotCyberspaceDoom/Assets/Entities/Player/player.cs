@@ -98,10 +98,13 @@ public class player : MonoBehaviour {
 
 	public static void WorldChange() {
 		switch (SceneManager.GetActiveScene().buildIndex) {
-			case 2:
+			case 0: 
+				playMan.instance.StartRain();
+				break;
+			case 1:
 				playMan.instance.StartSnow();
 				break;
-			case 3:
+			case 2:
 				playMan.instance.StartDark();
 				break;
 		}
