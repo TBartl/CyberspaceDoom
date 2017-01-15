@@ -47,6 +47,53 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="IceAmbience" ID="{85D6380A-EA25-45F3-B6CA-6487A4A58CCA}">
+					<ChildrenList>
+						<Action Name="Play" ID="{835D4622-B61F-4154-BE4C-0439D4F567C9}" ShortID="359350261" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3BB9073B-F0F9-4CBF-B39E-A6A60B2C0FAC}" Global="false">
+									<ObjectRef Name="IceAmbience" ID="{51112A79-FD22-4E69-AE97-B7658A0CA468}" WorkUnitID="{02BBB1ED-E89F-4ADE-A1B7-ECD983C3810F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{055CBD0F-ADA6-49E7-9DCA-ECB7DFA722B6}" ShortID="203276345" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{2D869D7D-CA0D-48BE-BADF-3B64429E234D}" Global="false">
+									<ObjectRef Name="RainAmbience" ID="{B495226B-34D2-4DAF-9947-448ECB44C04D}" WorkUnitID="{02BBB1ED-E89F-4ADE-A1B7-ECD983C3810F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="RainAmbience" ID="{2BA7AE89-29D7-4445-8612-32E4F518C0AF}">
+					<ChildrenList>
+						<Action Name="Play" ID="{CD3CF3B1-BC10-45D1-BE21-E254362E6C52}" ShortID="572232723" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{CE9E137D-FF57-49E8-8108-190EE442E40B}" Global="false">
+									<ObjectRef Name="RainAmbience" ID="{B495226B-34D2-4DAF-9947-448ECB44C04D}" WorkUnitID="{02BBB1ED-E89F-4ADE-A1B7-ECD983C3810F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ShadowAmbience" ID="{EAEAABBA-E4E8-4A60-9E03-942DEA8998A9}">
+					<ChildrenList>
+						<Action Name="Play" ID="{10070987-B0C6-451A-B90D-B4E3AF34FE34}" ShortID="57495897" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{6BCC0EF7-3639-4C37-8B25-FFDE21660498}" Global="false">
+									<ObjectRef Name="ShadowAmbience" ID="{A80DD963-B4AC-4EAC-A0B2-1CAAB21FB2BD}" WorkUnitID="{02BBB1ED-E89F-4ADE-A1B7-ECD983C3810F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Stop" ID="{949433B3-0E46-477E-A810-C382064642FD}" ShortID="51072910" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{40F3E6D3-E082-40DF-8BA3-18478F0461FA}" Global="false">
+									<ObjectRef Name="IceAmbience" ID="{51112A79-FD22-4E69-AE97-B7658A0CA468}" WorkUnitID="{02BBB1ED-E89F-4ADE-A1B7-ECD983C3810F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
