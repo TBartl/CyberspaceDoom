@@ -6443,6 +6443,11 @@ Prefab:
       propertyPath: InitialModule.startLifetime.scalar
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 198764073942512228, guid: abfa4fbbd7f1b4bbba0306d0b52e5257,
+        type: 2}
+      propertyPath: ShapeModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: abfa4fbbd7f1b4bbba0306d0b52e5257, type: 2}
   m_IsPrefabParent: 0
