@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{5055283F-1BD9-4065-BD06-E03AEDDC8BD1}'
-    m_lastTimePsrt1: -1455376896
-    m_lastTimePart2: -1999356673
+    m_lastTimePsrt1: 544688512
+    m_lastTimePart2: -1999356670
     List:
     - Name: Footstep
       Path: Default Work Unit/Footstep
@@ -58,6 +58,16 @@ MonoBehaviour:
         ObjectType: 3
       ID: 324443136
       Guid: b6e39ca36f80db4a83703f5ffb5bd91f
+      maxAttenuation: 0
+    - Name: PlayMusic
+      Path: Default Work Unit/PlayMusic
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlayMusic
+        ObjectType: 3
+      ID: 417627684
+      Guid: cab02477fa526748afca0372d92887ab
       maxAttenuation: 0
     - Name: RainAmbience
       Path: Default Work Unit/RainAmbience
@@ -205,7 +215,13 @@ MonoBehaviour:
         ObjectType: 7
       ID: 534561221
       Guid: badfea1a6b732041bd8b5d8785136824
-  ExpandedItems: []
+  ExpandedItems:
+  - /Space Jam Wwise
+  - /Space Jam Wwise/Events
+  - /Space Jam Wwise/Events/Default Work Unit
+  - /Space Jam Wwise/States
+  - /Space Jam Wwise/States/Default Work Unit
+  - /Space Jam Wwise/States/Default Work Unit/States
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
