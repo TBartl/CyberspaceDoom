@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 [RequireComponent (typeof(Rigidbody))]
 public class player : MonoBehaviour {
 
-	public static bool started;
+	public static bool started = true;
 	public gun gunScript;
 
 	public float mouseSensitivityX = 3.5f;
@@ -27,9 +27,6 @@ public class player : MonoBehaviour {
 	public static Player rewiredPlayer;
 
 	void Start() {
-		DontDestroyOnLoad(gameObject);
-		started = false;
-
 		camTrans = Camera.main.transform;
 		rigi = gameObject.GetComponent<Rigidbody>();
 		capColl = gameObject.GetComponent<CapsuleCollider>();
@@ -80,7 +77,4 @@ public class player : MonoBehaviour {
 			gunScript.Setup();
 		}
 	}
-
-
-
 }
