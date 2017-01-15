@@ -19,7 +19,7 @@
 						<Action Name="Play" ID="{D0772EF0-795D-40A8-AD32-8664F7000AC8}" ShortID="537050800" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{EB161F80-D91C-4F05-939A-2CECDC335C02}" Global="false">
-									<ObjectRef Name="IceFootsteps" ID="{F3FCFD11-331B-452E-A0FA-9B91E1F0B08F}" WorkUnitID="{02BBB1ED-E89F-4ADE-A1B7-ECD983C3810F}"/>
+									<ObjectRef Name="Footsteps" ID="{F3FCFD11-331B-452E-A0FA-9B91E1F0B08F}" WorkUnitID="{02BBB1ED-E89F-4ADE-A1B7-ECD983C3810F}"/>
 								</Element>
 							</ElementList>
 						</Action>
