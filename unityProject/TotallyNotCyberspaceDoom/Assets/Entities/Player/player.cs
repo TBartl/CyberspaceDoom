@@ -38,9 +38,12 @@ public class player : MonoBehaviour {
 
 	void Update() {
 		if (started) {
-			LookingUpdate();
-			MovingUpdate();
-			JumpingUpdate();
+			if (!playMan.instance.paused) {
+				LookingUpdate();
+				MovingUpdate();
+				JumpingUpdate();
+			}
+			if (rewiredPlayer.GetButtonDown("Pause")) playMan.instance.TogglePause();
 		}
 	}
 
@@ -58,7 +61,7 @@ public class player : MonoBehaviour {
 		// the smaller this last value is the better
 		moveAmount = Vector3.SmoothDamp(moveAmount, targetMoveAmount, ref smoothMovment, 0.15f);
 
-		if (moveDir != Vector3.zero) AkSoundEngine.PostEvent("Footsteps", gameObject);
+//		if (moveDir != Vector3.zero) AkSoundEngine.PostEvent("Footsteps", gameObject);
 
 	}
 
@@ -75,11 +78,19 @@ public class player : MonoBehaviour {
 	}
 
 
-	//temp progress
+	//change worlds
 	void OnTriggerEnter(Collider col) {
 		if (col.gameObject.tag == "progress") {
-			SceneManager.LoadScene("final_snow");
-			playMan.instance.StartSnow();
+			if (playMan.instance.onRain) {
+				SceneManager.LoadScene("final_snow");
+				playMan.instance.StartSnow();
+				playMan.instance.onRain = false;
+			}
+			else if (playMan.instance.onSnow) {
+				SceneManager.LoadScene("final_dark");
+				playMan.instance.StartDark();
+				playMan.instance.onSnow = false;
+			}
 			gunScript.Setup();
 		}
 	}
