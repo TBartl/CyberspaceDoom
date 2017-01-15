@@ -56,7 +56,10 @@ public class player : MonoBehaviour {
 		Vector3 moveDir = new Vector3(rewiredPlayer.GetAxis("Horz"), 0, rewiredPlayer.GetAxisRaw("Vert")).normalized;
 		Vector3 targetMoveAmount = moveDir * speed;
 		// the smaller this last value is the better
-		moveAmount = Vector3.SmoothDamp(moveAmount, targetMoveAmount, ref smoothMovment, 0.15f);  
+		moveAmount = Vector3.SmoothDamp(moveAmount, targetMoveAmount, ref smoothMovment, 0.15f);
+
+		if (moveDir != Vector3.zero) AkSoundEngine.PostEvent("Footsteps", gameObject);
+
 	}
 
 	void JumpingUpdate() {

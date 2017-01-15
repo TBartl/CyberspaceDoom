@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b903eecf8984640cf8e6896a224a7913, type: 3}
-  m_Name: AkWwiseProjectData 86
+  m_Name: AkWwiseProjectData 88
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
@@ -213,8 +213,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A6837174-422B-45B7-B2EE-1DB92D881644}'
-    m_lastTimePsrt1: 799459584
-    m_lastTimePart2: -1999356677
+    m_lastTimePsrt1: -1580213376
+    m_lastTimePart2: -1999356668
     List:
     - Name: MainSoundbank
       Path: Default Work Unit/MainSoundbank
@@ -225,10 +225,7 @@ MonoBehaviour:
         ObjectType: 7
       ID: 534561221
       Guid: badfea1a6b732041bd8b5d8785136824
-  ExpandedItems:
-  - /Space Jam Wwise
-  - /Space Jam Wwise/Events
-  - /Space Jam Wwise/Events/Default Work Unit
+  ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
