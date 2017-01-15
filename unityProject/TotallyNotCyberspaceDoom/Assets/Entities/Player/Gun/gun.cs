@@ -27,6 +27,8 @@ public class gun : MonoBehaviour {
 
 	public Transform magazine; // just an empty gameObject to hold the prefabs
 
+	public GameObject muzzleFlash;
+
 
 	public float shotgunRecoil = .1f;
 	public float shotgunReloadTime = 2f;
@@ -47,19 +49,22 @@ public class gun : MonoBehaviour {
 	void Update() {
 		if (player.started && !playMan.instance.paused) {
 			tempShotTime -= Time.deltaTime;
-			if (player.rewiredPlayer.GetButton("Shoot1") && tempShotTime <= 0) {
+			if (Input.GetButton("Shoot1") && tempShotTime <= 0) {
 				anim.SetTrigger("fire");
 				GrabBullet();
+				StartCoroutine(FlashMuzzle());
 				AkSoundEngine.PostEvent("Pistol", gameObject);
 				tempShotTime = timeBetweenShots;
 			}
 
-			if (player.rewiredPlayer.GetButtonDown("Shoot2") && canShootShotgun) {
+			if (Input.GetButtonDown("Shoot2") && canShootShotgun) {
 				anim.SetTrigger("fire");
 				//Temporary shotgun lol
 				for (int i = 0; i < 20; i++) {
 					GrabSlug();
 				}
+
+				StartCoroutine(FlashMuzzle());
 
 				// Should probably do rocket jumping with an explosion when a bullet hits the ground
 				// But this is easier for now
@@ -73,6 +78,7 @@ public class gun : MonoBehaviour {
 			}
 		}
 	}
+
 
 	void PoolBullets() {
 		bulletList = new List<GameObject>();
@@ -174,5 +180,12 @@ public class gun : MonoBehaviour {
 		chargeBar.localScale = Vector3.one;
 		canShootShotgun = true;
 
+	}
+
+
+	IEnumerator FlashMuzzle() {
+		muzzleFlash.SetActive(true);
+		yield return new WaitForSecondsRealtime(0.1f);
+		muzzleFlash.SetActive(false);
 	}
 }

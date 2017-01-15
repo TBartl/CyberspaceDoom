@@ -41,6 +41,9 @@ public class playMan : MonoBehaviour {
 		onSnow = false;
 		onDark = false;
 		paused = true;
+		mainPanel.SetActive(true);
+		creditsPanel.SetActive(false);
+		pausePanel.SetActive(false);
 	}
 		
 	public void StartRain() {
@@ -52,7 +55,7 @@ public class playMan : MonoBehaviour {
 //		AkSoundEngine.SetSwitch("Ambiences", "Ice", gameObject);
 
 
-		startMenu.enabled = false;
+		mainPanel.SetActive(false);
 		blur.enabled = false;
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
@@ -85,6 +88,7 @@ public class playMan : MonoBehaviour {
 		else {
 			Time.timeScale = 1f;
 			pausePanel.SetActive(false);
+			mainPanel.SetActive(false);
 			blur.enabled = false;
 
 			Cursor.lockState = CursorLockMode.Locked;
@@ -93,8 +97,10 @@ public class playMan : MonoBehaviour {
 	}
 
 	public void TogglePause() {
-		paused = !paused;
+		if (!paused) paused = true;
+		else paused = false;
 		Pause();
+
 	}
 
 	public void EndGame() {
