@@ -5640,6 +5640,7 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: We Are Number One But It's Doom but Every Time You Die the Bee Movie Plays
+    But Not Really
 --- !u!222 &1780486924
 CanvasRenderer:
   m_ObjectHideFlags: 0
