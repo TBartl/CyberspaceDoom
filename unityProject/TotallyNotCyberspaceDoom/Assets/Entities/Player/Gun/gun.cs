@@ -21,6 +21,11 @@ public class gun : MonoBehaviour {
 	public int pooledBullets;
 	List<GameObject> bulletList;
 
+	public GameObject shotgunBullet;
+	public GameObject[] shotgunBullets;
+	List<GameObject> shotgunBulletList;
+
+
 	public float shotgunRecoil = .1f;
 	public float shotgunReloadTime = 2f;
 	bool canShootShotgun = true;
@@ -30,6 +35,7 @@ public class gun : MonoBehaviour {
 		anim = GetComponent<Animator>();
 		tempShotTime = timeBetweenShots;
 		PoolBullets();
+		PoolShotgunBullets();
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
 	}
@@ -38,14 +44,15 @@ public class gun : MonoBehaviour {
 		tempShotTime -= Time.deltaTime;
 		if (Input.GetButton("Fire1") && tempShotTime <= 0) {
 			anim.SetTrigger("fire");
-			GrabBullet(false);
+			GrabBullet();
+			AkSoundEngine.PostEvent("Pistol", gameObject);
 			tempShotTime = timeBetweenShots;
 		}
 		if (Input.GetButtonDown("Fire2") && canShootShotgun) {
 			anim.SetTrigger("fire");
 			//Temporary shotgun lol
 			for (int i = 0; i < 20; i++) {
-				GrabBullet(true);
+				GrabSlug();
 			}
 
 			// Should probably do rocket jumping with an explosion when a bullet hits the ground
@@ -53,6 +60,8 @@ public class gun : MonoBehaviour {
 			//if (Vector3.Dot(muzzleOpening.forward, muzzleOpening.transform.position.normalized) < -.7f) {
 				transform.root.GetComponent<Rigidbody>().velocity += (-muzzleOpening.forward * 20);
 			//}
+
+			AkSoundEngine.PostEvent("Shotgun", gameObject);
 
 			StartCoroutine(ReloadShotgun());
 		}
@@ -84,7 +93,24 @@ public class gun : MonoBehaviour {
 		}
 	}
 
-	void GrabBullet(bool useRecoil) {
+	void PoolShotgunBullets() {
+		shotgunBulletList = new List<GameObject>();
+		for (int i = 0; i < pooledBullets; ++i) {
+			GameObject its = Instantiate(shotgunBullets[0]) as GameObject;
+			GameObject lit = Instantiate(shotgunBullets[1]) as GameObject;
+			GameObject fam = Instantiate(shotgunBullets[2]) as GameObject;
+
+			its.SetActive(false);
+			lit.SetActive(false);
+			fam.SetActive(false);
+
+			shotgunBulletList.Add(its);
+			shotgunBulletList.Add(lit);
+			shotgunBulletList.Add(fam);
+		}
+	}
+
+	void GrabBullet() {
 		for (int i = 0; i < bulletList.Count; ++i) {
 			if (bulletList[i] != null && !bulletList[i].activeInHierarchy) {
 				bulletList[i].transform.position = muzzleOpening.position;
@@ -96,8 +122,25 @@ public class gun : MonoBehaviour {
 				Rigidbody fam = bulletList[i].GetComponent<Rigidbody>();
 				fam.velocity = Vector3.zero;
 				Vector3 direction = muzzleOpening.forward;
-				if (useRecoil)
-					direction = (direction + Random.insideUnitSphere * shotgunRecoil).normalized;
+				fam.AddForce(direction * bulletForce);
+				break;
+			}
+		}
+	}
+
+	void GrabSlug() {
+		for (int i = 0; i < shotgunBulletList.Count; ++i) {
+			if (shotgunBulletList[i] != null && !shotgunBulletList[i].activeInHierarchy) {
+				shotgunBulletList[i].transform.position = muzzleOpening.position;
+				shotgunBulletList[i].transform.rotation = muzzleOpening.rotation;
+				shotgunBulletList[i].GetComponent<deactivator>().timeTillDeactivate = 1.5f;
+				shotgunBulletList[i].SetActive(true);
+
+				//fire
+				Rigidbody fam = shotgunBulletList[i].GetComponent<Rigidbody>();
+				fam.velocity = Vector3.zero;
+				Vector3 direction = muzzleOpening.forward;
+				direction = (direction + Random.insideUnitSphere * shotgunRecoil).normalized;
 				fam.AddForce(direction * bulletForce);
 				break;
 			}

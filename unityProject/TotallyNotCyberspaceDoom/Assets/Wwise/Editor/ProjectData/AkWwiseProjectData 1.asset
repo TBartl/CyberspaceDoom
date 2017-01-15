@@ -17,7 +17,11 @@ MonoBehaviour:
   StateWwu: []
   SwitchWwu: []
   BankWwu: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /Space Jam Wwise
+  - /Space Jam Wwise/States
+  - /Space Jam Wwise/States/Default Work Unit
+  - /Space Jam Wwise/States/Default Work Unit/Planets
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
