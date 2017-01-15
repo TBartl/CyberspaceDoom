@@ -36,8 +36,6 @@ public class gun : MonoBehaviour {
 		tempShotTime = timeBetweenShots;
 		PoolBullets();
 		PoolShotgunBullets();
-		Cursor.lockState = CursorLockMode.Locked;
-		Cursor.visible = false;
 	}
 
 	void Update() {
