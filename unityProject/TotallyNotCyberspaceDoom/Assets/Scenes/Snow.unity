@@ -2897,10 +2897,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1720112057738950, guid: 1392523ae17814328a164bfd84f88c49, type: 2}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1392523ae17814328a164bfd84f88c49, type: 2}
   m_IsPrefabParent: 0
@@ -3181,7 +3177,7 @@ GameObject:
   - component: {fileID: 931564164}
   - component: {fileID: 931564166}
   - component: {fileID: 931564165}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3288,7 +3284,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bbca5de20b40944d978cdec6e9e53bf, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1205533032
+--- !u!1001 &1185352661
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3404,7 +3400,7 @@ GameObject:
   - component: {fileID: 1821916644}
   - component: {fileID: 1821916645}
   - component: {fileID: 1821916643}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Planet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

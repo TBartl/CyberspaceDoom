@@ -13,6 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
+<<<<<<< HEAD
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{5055283F-1BD9-4065-BD06-E03AEDDC8BD1}'
@@ -21,6 +22,16 @@ MonoBehaviour:
     List:
     - Name: Footstep
       Path: Default Work Unit\Footstep
+=======
+  - PhysicalPath: Events/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{5055283F-1BD9-4065-BD06-E03AEDDC8BD1}'
+    m_lastTimePsrt1: 799459584
+    m_lastTimePart2: -1999356677
+    List:
+    - Name: Footstep
+      Path: Default Work Unit/Footstep
+>>>>>>> 9845a672a1769261b375992f6153ebf60d88bc48
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -29,8 +40,23 @@ MonoBehaviour:
       ID: 1866025847
       Guid: a3660bf6c68f784cbdb159f57769ba58
       maxAttenuation: 0
+<<<<<<< HEAD
     - Name: Laser
       Path: Default Work Unit\Laser
+=======
+    - Name: IceAmbience
+      Path: Default Work Unit/IceAmbience
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: IceAmbience
+        ObjectType: 3
+      ID: 1952003650
+      Guid: 0a38d68525eaf345b6ca6487a4a58cca
+      maxAttenuation: 0
+    - Name: Laser
+      Path: Default Work Unit/Laser
+>>>>>>> 9845a672a1769261b375992f6153ebf60d88bc48
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -40,7 +66,11 @@ MonoBehaviour:
       Guid: 80ea4f834e42b549b53d836004b6692b
       maxAttenuation: 0
     - Name: Pistol
+<<<<<<< HEAD
       Path: Default Work Unit\Pistol
+=======
+      Path: Default Work Unit/Pistol
+>>>>>>> 9845a672a1769261b375992f6153ebf60d88bc48
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -49,6 +79,7 @@ MonoBehaviour:
       ID: 324443136
       Guid: b6e39ca36f80db4a83703f5ffb5bd91f
       maxAttenuation: 0
+<<<<<<< HEAD
     - Name: Set_State
       Path: Default Work Unit\Set_State
       PathAndIcons:
@@ -71,6 +102,30 @@ MonoBehaviour:
       maxAttenuation: 0
     - Name: Shotgun
       Path: Default Work Unit\Shotgun
+=======
+    - Name: RainAmbience
+      Path: Default Work Unit/RainAmbience
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RainAmbience
+        ObjectType: 3
+      ID: -482084889
+      Guid: 89aea72bd7294544861232e4f518c0af
+      maxAttenuation: 0
+    - Name: ShadowAmbience
+      Path: Default Work Unit/ShadowAmbience
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ShadowAmbience
+        ObjectType: 3
+      ID: 693161857
+      Guid: baabeaeae8e4604a9e03942dea8998a9
+      maxAttenuation: 0
+    - Name: Shotgun
+      Path: Default Work Unit/Shotgun
+>>>>>>> 9845a672a1769261b375992f6153ebf60d88bc48
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -80,6 +135,7 @@ MonoBehaviour:
       Guid: 79edfc2b10313649ae100b7a309ddaa5
       maxAttenuation: 0
   AuxBusWwu:
+<<<<<<< HEAD
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D719BD71-1F27-4EB1-86C1-D703E5A2C9F9}'
@@ -95,6 +151,23 @@ MonoBehaviour:
     List:
     - Name: Planets
       Path: Default Work Unit\Planets
+=======
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{D719BD71-1F27-4EB1-86C1-D703E5A2C9F9}'
+    m_lastTimePsrt1: -1417015808
+    m_lastTimePart2: -1999356876
+    List: []
+  StateWwu:
+  - PhysicalPath: States/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{7799CB02-96F6-4260-B6F7-1AFD1050C1B8}'
+    m_lastTimePsrt1: -1417015808
+    m_lastTimePart2: -1999356876
+    List:
+    - Name: Planets
+      Path: Default Work Unit/Planets
+>>>>>>> 9845a672a1769261b375992f6153ebf60d88bc48
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -123,6 +196,7 @@ MonoBehaviour:
       - bytes: 38cec38ec2e3ba4d8b466c9fee41d2c3
       - bytes: 39bdba7de97d834896199a0315aded08
   SwitchWwu:
+<<<<<<< HEAD
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{2458A0AB-62C0-46D1-8FFD-23028BB16ECA}'
@@ -131,6 +205,16 @@ MonoBehaviour:
     List:
     - Name: Ambiences
       Path: Default Work Unit\Ambiences
+=======
+  - PhysicalPath: Switches/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{2458A0AB-62C0-46D1-8FFD-23028BB16ECA}'
+    m_lastTimePsrt1: -326554240
+    m_lastTimePart2: -1999356709
+    List:
+    - Name: Ambiences
+      Path: Default Work Unit/Ambiences
+>>>>>>> 9845a672a1769261b375992f6153ebf60d88bc48
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -155,7 +239,11 @@ MonoBehaviour:
       - bytes: 5701ea095c196e48a1c0760e2f63fd0f
       - bytes: b02948ee304dfb4ca08e32d09fd6e0f8
     - Name: Footsteps
+<<<<<<< HEAD
       Path: Default Work Unit\Footsteps
+=======
+      Path: Default Work Unit/Footsteps
+>>>>>>> 9845a672a1769261b375992f6153ebf60d88bc48
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -180,6 +268,7 @@ MonoBehaviour:
       - bytes: 95aec41effb78d4286f8d29c0d84d5d2
       - bytes: 86c938dca8b41b409b16cde5fb6b1f1b
   BankWwu:
+<<<<<<< HEAD
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A6837174-422B-45B7-B2EE-1DB92D881644}'
@@ -188,6 +277,16 @@ MonoBehaviour:
     List:
     - Name: MainSoundbank
       Path: Default Work Unit\MainSoundbank
+=======
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{A6837174-422B-45B7-B2EE-1DB92D881644}'
+    m_lastTimePsrt1: 799459584
+    m_lastTimePart2: -1999356677
+    List:
+    - Name: MainSoundbank
+      Path: Default Work Unit/MainSoundbank
+>>>>>>> 9845a672a1769261b375992f6153ebf60d88bc48
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -199,7 +298,11 @@ MonoBehaviour:
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
+<<<<<<< HEAD
   basePath: Audio\GeneratedSoundBanks
+=======
+  basePath: Audio/GeneratedSoundBanks
+>>>>>>> 9845a672a1769261b375992f6153ebf60d88bc48
   language: English(US)
   defaultPoolSize: 4096
   lowerPoolSize: 2048
