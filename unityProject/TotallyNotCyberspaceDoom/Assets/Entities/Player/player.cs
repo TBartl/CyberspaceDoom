@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 [RequireComponent (typeof(Rigidbody))]
 public class player : MonoBehaviour {
 
+	public static player instance;
+
 	public static bool started = true;
 	public gun gunScript;
 
@@ -27,10 +29,12 @@ public class player : MonoBehaviour {
 //	public static Player rewiredPlayer;
 
 	void Start() {
+		instance = this;
 		camTrans = Camera.main.transform;
 		rigi = gameObject.GetComponent<Rigidbody>();
 		capColl = gameObject.GetComponent<CapsuleCollider>();
 //		rewiredPlayer = ReInput.players.GetPlayer(0);
+		DontDestroyOnLoad(gameObject);
 	}
 
 	void Update() {
@@ -76,19 +80,35 @@ public class player : MonoBehaviour {
 
 
 	//change worlds
-	void OnTriggerEnter(Collider col) {
-		if (col.gameObject.tag == "progress") {
-			if (playMan.instance.onRain) {
-				SceneManager.LoadScene("final_snow");
+//	void OnTriggerEnter(Collider col) {
+//		if (col.gameObject.tag == "progress") {
+//			if (playMan.instance.onRain) {
+//				SceneManager.LoadScene("final_snow");
+//				playMan.instance.StartSnow();
+//				playMan.instance.onRain = false;
+//			}
+//			else if (playMan.instance.onSnow) {
+//				SceneManager.LoadScene("final_dark");
+//				playMan.instance.StartDark();
+//				playMan.instance.onSnow = false;
+//			}
+//			gunScript.Setup();
+//		}
+//	}
+
+	public static void WorldChange() {
+		switch (SceneManager.GetActiveScene().buildIndex) {
+			case 2:
 				playMan.instance.StartSnow();
-				playMan.instance.onRain = false;
-			}
-			else if (playMan.instance.onSnow) {
-				SceneManager.LoadScene("final_dark");
+				break;
+			case 3:
 				playMan.instance.StartDark();
-				playMan.instance.onSnow = false;
-			}
-			gunScript.Setup();
+				break;
 		}
+//		gunScript.Setup();
+	}
+
+	public void SetGun() {
+		gunScript.Setup();
 	}
 }

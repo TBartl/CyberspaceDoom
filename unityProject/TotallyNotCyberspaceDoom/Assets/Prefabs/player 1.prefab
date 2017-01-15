@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 114256750407569066}
   m_Layer: 0
   m_Name: player 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -476,8 +476,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1462439520942378}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 36.53, z: -6.35}
+  m_LocalRotation: {x: -0.009445475, y: -0.6721997, z: -0.7373073, w: -0.066605225}
+  m_LocalPosition: {x: -0.61, y: -12.5, z: 23.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4373849233163740}
@@ -485,7 +485,7 @@ Transform:
   - {fileID: 4293585724472834}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 261.881, y: -132.88899, z: 308.245}
 --- !u!4 &4081024195762762
 Transform:
   m_ObjectHideFlags: 1
@@ -1371,7 +1371,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074e1930825aa4b4188fae2d1ea6b5c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gunScript: {fileID: 114496050607006000}
   mouseSensitivityX: 3.5
   mouseSensitivityY: 3.5
   speed: 15
@@ -1568,7 +1567,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1540375445309632}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97e9b95cf609d96409b6c40519432957, type: 3}
   m_Name: 

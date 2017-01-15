@@ -6,6 +6,9 @@ public class playMan : MonoBehaviour {
 
 	public static playMan instance = null;
 
+	public Transform mcPlayer;
+	public Transform spawnPoint;
+
 	public bool onRain;
 	public bool onSnow;
 	public bool onDark;
@@ -34,16 +37,19 @@ public class playMan : MonoBehaviour {
 
 		mainCam = Camera.main;
 		blur = mainCam.GetComponent<UnityStandardAssets.ImageEffects.BlurOptimized>();
+
+		paused = true;
+		mainPanel.SetActive(true);
+		creditsPanel.SetActive(false);
+		pausePanel.SetActive(false);
 	}
 
 	void Start () {
 		onRain = false;
 		onSnow = false;
 		onDark = false;
-		paused = true;
-		mainPanel.SetActive(true);
-		creditsPanel.SetActive(false);
-		pausePanel.SetActive(false);
+
+		spawnPoint = GameObject.FindGameObjectWithTag("spawn").transform;
 	}
 		
 	public void StartRain() {
@@ -53,7 +59,7 @@ public class playMan : MonoBehaviour {
 		AkSoundEngine.PostEvent("RainAmbience", gameObject);
 
 //		AkSoundEngine.SetSwitch("Ambiences", "Ice", gameObject);
-
+		mcPlayer.position = spawnPoint.position;
 
 		mainPanel.SetActive(false);
 		blur.enabled = false;
@@ -66,12 +72,14 @@ public class playMan : MonoBehaviour {
 
 	public void StartSnow() {
 		onSnow = true;
+		mcPlayer.position = spawnPoint.position;
 		AkSoundEngine.SetState("States", "IcePlanet");
 		AkSoundEngine.PostEvent("IceAmbience", gameObject);
 	}
 
 	public void StartDark() {
 		onDark = true;
+		mcPlayer.position = spawnPoint.position;
 		AkSoundEngine.SetState("States", "ShadowPlanet");
 		AkSoundEngine.PostEvent("ShadowAmbience", gameObject);
 	}

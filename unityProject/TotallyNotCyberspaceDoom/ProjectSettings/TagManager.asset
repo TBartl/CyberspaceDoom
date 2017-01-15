@@ -7,6 +7,9 @@ TagManager:
   - Monolith
   - Bullet
   - progress
+  - Enemy
+  - planet
+  - spawn
   layers:
   - Default
   - TransparentFX
@@ -16,7 +19,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - ground
   - 
   - 
   - 
