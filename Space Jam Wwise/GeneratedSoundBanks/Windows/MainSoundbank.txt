@@ -7,28 +7,26 @@ Event	ID	Name			Wwise Object Path	Notes
 	3812882407	RainAmbience			\Default Work Unit\RainAmbience	
 	3982605422	Laser			\Default Work Unit\Laser	
 
-Switch Group	ID	Name			Wwise Object Path	Notes
-	2385628198	Footsteps			\Default Work Unit\Footsteps	
-
-Switch	ID	Name	Switch Group			Notes
-	344481046	Ice	Footsteps			
-	2043403999	Rain	Footsteps			
-	3140781661	Shadow	Footsteps			
-
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	107581637	Pistol3	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\Pistol3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pistol\Pistol3		57292
 	161480498	LaserBeam1	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\LaserBeam1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Laser\LaserBeam1		419000
 	172787058	ambience5	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\ambience5_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\ShadowAmbience\ambience5		3400620
+	219820858	SnowFootstep3	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\SnowFootstep3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\IceFootsteps\SnowFootstep3		32024
 	251053522	SnowAmbience1	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\SnowAmbience1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\IceAmbience\SnowAmbience1		2137708
+	316437612	SnowFootstep5	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\SnowFootstep5_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\IceFootsteps\SnowFootstep5		40568
 	389132379	ambience4	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\ambience4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\ShadowAmbience\ambience4		5671676
 	424694750	ambience1	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\ambience1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\ShadowAmbience\ambience1		2611688
+	425606117	SnowFootstep2	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\SnowFootstep2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\IceFootsteps\SnowFootstep2		60964
 	512343843	ambience3	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\ambience3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\ShadowAmbience\ambience3		4098868
 	544288642	ambience8	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\ambience8_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\ShadowAmbience\ambience8		1636620
 	545781998	LaserShotgunNoTail	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\LaserShotgunNoTail_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shotgun\LaserShotgunNoTail		149072
 	582706071	SnowAmbience3	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\SnowAmbience3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\IceAmbience\SnowAmbience3		3086868
+	622020659	SnowFootstep1	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\SnowFootstep1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\IceFootsteps\SnowFootstep1		42404
 	637521793	Rain	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\Rain_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\RainAmbience\Rain		16581832
+	670029384	SnowFootstep6	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\SnowFootstep6_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\IceFootsteps\SnowFootstep6		53980
 	764627016	ambience6	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\ambience6_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\ShadowAmbience\ambience6		2695020
 	807596079	LaserShotgun2	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\LaserShotgun2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shotgun\LaserShotgun2		159088
+	838238911	SnowFootstep4	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\SnowFootstep4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\IceFootsteps\SnowFootstep4		42868
 	856116723	ambience2	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\ambience2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\ShadowAmbience\ambience2		1389200
 	1030414251	SnowAmbience2	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\SnowAmbience2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\IceAmbience\SnowAmbience2		3528144
 	1059312155	ambience7	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Windows\SFX\ambience7_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\ShadowAmbience\ambience7		4363468
