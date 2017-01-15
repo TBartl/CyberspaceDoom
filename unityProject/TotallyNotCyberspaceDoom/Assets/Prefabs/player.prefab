@@ -164,6 +164,7 @@ GameObject:
   - component: {fileID: 92793037407417648}
   - component: {fileID: 124239312416128136}
   - component: {fileID: 114395172883085588}
+  - component: {fileID: 114509147354613858}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1156,6 +1157,25 @@ MonoBehaviour:
   - {fileID: 23340446224237854}
   - {fileID: 23919868083264848}
   - {fileID: 23340385875466354}
+--- !u!114 &114509147354613858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1488984276584240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97431dbf53a9b42188dc47f3bd1d7f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  valueGuid: badfea1a6b732041bd8b5d8785136824
+  bankName: MainSoundbank
+  loadAsynchronous: 0
+  decodeBank: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
 --- !u!114 &114589861196519330
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1179,6 +1199,12 @@ MonoBehaviour:
   - {fileID: 1374383278245078, guid: 2cf0a22fc407746a6985b44bb937a37d, type: 2}
   - {fileID: 1374383278245078, guid: 2cf0a22fc407746a6985b44bb937a37d, type: 2}
   pooledBullets: 90
+  shotgunBullet: {fileID: 1374383278245078, guid: ec2e9e62548204070a1474bc446ad205,
+    type: 2}
+  shotgunBullets:
+  - {fileID: 1374383278245078, guid: ec2e9e62548204070a1474bc446ad205, type: 2}
+  - {fileID: 1374383278245078, guid: ec2e9e62548204070a1474bc446ad205, type: 2}
+  - {fileID: 1374383278245078, guid: ec2e9e62548204070a1474bc446ad205, type: 2}
   shotgunRecoil: 0.1
   shotgunReloadTime: 2
   chargeBar: {fileID: 4544146515554582}

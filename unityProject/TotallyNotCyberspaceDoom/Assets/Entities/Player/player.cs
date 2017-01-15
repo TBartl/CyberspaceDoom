@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Rewired;
 
 [RequireComponent (typeof(Rigidbody))]
 public class player : MonoBehaviour {
@@ -19,10 +20,13 @@ public class player : MonoBehaviour {
 	Rigidbody rigi;
 	bool onGround = true;
 
+	Player rewiredPlayer;
+
 	void Start() {
 		camTrans = Camera.main.transform;
 		rigi = gameObject.GetComponent<Rigidbody>();
 		capColl = gameObject.GetComponent<CapsuleCollider>();
+		rewiredPlayer = ReInput.players.GetPlayer(0);
 	}
 
 	void Update() {
@@ -33,21 +37,21 @@ public class player : MonoBehaviour {
 
 	// fix this later with controller support
 	void LookingUpdate() {
-		transform.Rotate(Vector3.up * Input.GetAxis("Mouse X") * mouseSensitivityX);
-		vertRot += Input.GetAxis("Mouse Y") * mouseSensitivityY;
+		transform.Rotate(Vector3.up * rewiredPlayer.GetAxis("CamHorz") * mouseSensitivityX);
+		vertRot += rewiredPlayer.GetAxis("CamVert") * mouseSensitivityY;
 		vertRot = Mathf.Clamp(vertRot, -60f, 60f);
 		camTrans.localEulerAngles = Vector3.left * vertRot;
 	}
 
 	void MovingUpdate() {
-		Vector3 moveDir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized;
+		Vector3 moveDir = new Vector3(rewiredPlayer.GetAxis("Horz"), 0, rewiredPlayer.GetAxisRaw("Vert")).normalized;
 		Vector3 targetMoveAmount = moveDir * speed;
 		// the smaller this last value is the better
 		moveAmount = Vector3.SmoothDamp(moveAmount, targetMoveAmount, ref smoothMovment, 0.15f);  
 	}
 
 	void JumpingUpdate() {
-		if (Input.GetButtonDown("Jump") && onGround) rigi.AddForce(transform.up * jumpForce);
+		if (rewiredPlayer.GetButtonDown("Jump") && onGround) rigi.AddForce(transform.up * jumpForce);
 		onGround = false;
 		Ray groundRay = new Ray(transform.position, -transform.up);
 		RaycastHit groundHit;

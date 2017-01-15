@@ -8,17 +8,32 @@ ModelImporter:
     100000: //RootNode
     100002: Cube
     100004: Cube_001
+    100006: Gate
+    100008: IcePlanet
+    100010: TestPlanet
     400000: //RootNode
     400002: Cube
     400004: Cube_001
+    400006: Gate
+    400008: IcePlanet
+    400010: TestPlanet
     2300000: //RootNode
     2300002: Cube
     2300004: Cube_001
+    2300006: Gate
+    2300008: IcePlanet
+    2300010: TestPlanet
     3300000: //RootNode
     3300002: Cube
     3300004: Cube_001
+    3300006: Gate
+    3300008: IcePlanet
+    3300010: TestPlanet
     4300000: Cube
     4300002: Cube_001
+    4300004: Gate
+    4300006: IcePlanet
+    4300008: TestPlanet
     7400000: Default Take
     9500000: //RootNode
   materials:

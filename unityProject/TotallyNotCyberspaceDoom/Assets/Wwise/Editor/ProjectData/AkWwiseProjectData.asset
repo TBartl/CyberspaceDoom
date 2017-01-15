@@ -16,6 +16,16 @@ MonoBehaviour:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{5055283F-1BD9-4065-BD06-E03AEDDC8BD1}'
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1417015808
+    m_lastTimePart2: -1999356876
+=======
+    m_lastTimePsrt1: -1686685056
+    m_lastTimePart2: -1999356713
+>>>>>>> 1e797ce128ad0e315af030fec77564ccbe58805a
+    List: []
+=======
     m_lastTimePsrt1: -1736554240
     m_lastTimePart2: -1999356709
     List:
@@ -59,19 +69,30 @@ MonoBehaviour:
       ID: 51683977
       Guid: 79edfc2b10313649ae100b7a309ddaa5
       maxAttenuation: 0
+>>>>>>> a066c921d6fe595b60d220c1aade503a0505a0d9
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D719BD71-1F27-4EB1-86C1-D703E5A2C9F9}'
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1417015808
+    m_lastTimePart2: -1999356876
+=======
     m_lastTimePsrt1: -1686685056
     m_lastTimePart2: -1999356713
+>>>>>>> 1e797ce128ad0e315af030fec77564ccbe58805a
     List: []
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{7799CB02-96F6-4260-B6F7-1AFD1050C1B8}'
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1417015808
+    m_lastTimePart2: -1999356876
+=======
     m_lastTimePsrt1: -1686685056
     m_lastTimePart2: -1999356713
+>>>>>>> 1e797ce128ad0e315af030fec77564ccbe58805a
     List:
     - Name: Planets
       Path: Default Work Unit/Planets
@@ -106,6 +127,16 @@ MonoBehaviour:
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{2458A0AB-62C0-46D1-8FFD-23028BB16ECA}'
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1417015808
+    m_lastTimePart2: -1999356876
+=======
+    m_lastTimePsrt1: -1686685056
+    m_lastTimePart2: -1999356713
+>>>>>>> 1e797ce128ad0e315af030fec77564ccbe58805a
+    List: []
+=======
     m_lastTimePsrt1: -1706554240
     m_lastTimePart2: -1999356709
     List:
@@ -159,10 +190,21 @@ MonoBehaviour:
       - bytes: 4d528cb5a0c6aa4aab532ff37d522959
       - bytes: 95aec41effb78d4286f8d29c0d84d5d2
       - bytes: 86c938dca8b41b409b16cde5fb6b1f1b
+>>>>>>> a066c921d6fe595b60d220c1aade503a0505a0d9
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A6837174-422B-45B7-B2EE-1DB92D881644}'
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_lastTimePsrt1: -1417015808
+    m_lastTimePart2: -1999356876
+=======
+    m_lastTimePsrt1: -1686685056
+    m_lastTimePart2: -1999356713
+>>>>>>> 1e797ce128ad0e315af030fec77564ccbe58805a
+    List: []
+=======
     m_lastTimePsrt1: -1706554240
     m_lastTimePart2: -1999356709
     List:
@@ -175,6 +217,7 @@ MonoBehaviour:
         ObjectType: 7
       ID: 534561221
       Guid: badfea1a6b732041bd8b5d8785136824
+>>>>>>> a066c921d6fe595b60d220c1aade503a0505a0d9
   ExpandedItems:
   - /Space Jam Wwise
   - /Space Jam Wwise/States
