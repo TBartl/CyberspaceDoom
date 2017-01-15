@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 54450051977634162}
   - component: {fileID: 114196701589159674}
   - component: {fileID: 114282339321290972}
+  - component: {fileID: 114458074441728620}
   m_Layer: 10
   m_Name: shotgunBullet
   m_TagString: Bullet
@@ -218,6 +219,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planet: {fileID: 114117782824257732, guid: 26026e8ea661d412f98bd72eaa1881aa, type: 2}
   smolGravity: -2
+--- !u!114 &114458074441728620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1374383278245078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41197970c8b8ffb4f9299b59fb293747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lastVelocity: {x: 0, y: 0, z: 0}
 --- !u!135 &135281531537447630
 SphereCollider:
   m_ObjectHideFlags: 1
