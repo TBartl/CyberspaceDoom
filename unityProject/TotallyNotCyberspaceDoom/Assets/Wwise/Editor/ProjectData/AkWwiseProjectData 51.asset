@@ -9,15 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b903eecf8984640cf8e6896a224a7913, type: 3}
-  m_Name: AkWwiseProjectData 42
+  m_Name: AkWwiseProjectData 51
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{5055283F-1BD9-4065-BD06-E03AEDDC8BD1}'
-    m_lastTimePsrt1: -435900160
-    m_lastTimePart2: -1999356689
+    m_lastTimePsrt1: 799459584
+    m_lastTimePart2: -1999356677
     List:
     - Name: Footstep
       Path: Default Work Unit/Footstep
@@ -28,7 +28,17 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1866025847
       Guid: a3660bf6c68f784cbdb159f57769ba58
-      maxAttenuation: 100
+      maxAttenuation: 0
+    - Name: IceAmbience
+      Path: Default Work Unit/IceAmbience
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: IceAmbience
+        ObjectType: 3
+      ID: 1952003650
+      Guid: 0a38d68525eaf345b6ca6487a4a58cca
+      maxAttenuation: 0
     - Name: Laser
       Path: Default Work Unit/Laser
       PathAndIcons:
@@ -49,25 +59,25 @@ MonoBehaviour:
       ID: 324443136
       Guid: b6e39ca36f80db4a83703f5ffb5bd91f
       maxAttenuation: 0
-    - Name: Set_State
-      Path: Default Work Unit/Set_State
+    - Name: RainAmbience
+      Path: Default Work Unit/RainAmbience
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Set_State
+      - ElementName: RainAmbience
         ObjectType: 3
-      ID: -1698455135
-      Guid: 13b44339defe91408f930442597eeb35
+      ID: -482084889
+      Guid: 89aea72bd7294544861232e4f518c0af
       maxAttenuation: 0
-    - Name: SetSwitch
-      Path: Default Work Unit/SetSwitch
+    - Name: ShadowAmbience
+      Path: Default Work Unit/ShadowAmbience
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: SetSwitch
+      - ElementName: ShadowAmbience
         ObjectType: 3
-      ID: 921191147
-      Guid: f6033b14a11837418c7af48f7e3b9e9c
+      ID: 693161857
+      Guid: baabeaeae8e4604a9e03942dea8998a9
       maxAttenuation: 0
     - Name: Shotgun
       Path: Default Work Unit/Shotgun
@@ -183,8 +193,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A6837174-422B-45B7-B2EE-1DB92D881644}'
-    m_lastTimePsrt1: -326554240
-    m_lastTimePart2: -1999356709
+    m_lastTimePsrt1: 799459584
+    m_lastTimePart2: -1999356677
     List:
     - Name: MainSoundbank
       Path: Default Work Unit/MainSoundbank
