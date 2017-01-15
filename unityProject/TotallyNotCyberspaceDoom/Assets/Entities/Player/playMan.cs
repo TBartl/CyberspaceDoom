@@ -69,20 +69,19 @@ public class playMan : MonoBehaviour {
 		AkSoundEngine.PostEvent("RainAmbience", gameObject);
 
 //		AkSoundEngine.SetSwitch("Ambiences", "Ice", gameObject);
-		mcPlayer.position = spawnPoint.position;
+		mcPlayer.position = Vector3.up * 10f;
 	}
 
 	public void StartSnow() {
 		onSnow = true;
-		mcPlayer.position = spawnPoint.position;
+		mcPlayer.position = Vector3.up * 10f;
 		AkSoundEngine.SetState("States", "IcePlanet");
-		AkSoundEngine.PostEvent("PlayMusic", gameObject);
 		AkSoundEngine.PostEvent("IceAmbience", gameObject);
 	}
 
 	public void StartDark() {
 		onDark = true;
-		mcPlayer.position = spawnPoint.position;
+		mcPlayer.position = Vector3.up * 10f;
 		AkSoundEngine.SetState("States", "ShadowPlanet");
 //		AkSoundEngine.PostEvent("PlayMusic", gameObject);
 		AkSoundEngine.PostEvent("ShadowAmbience", gameObject);

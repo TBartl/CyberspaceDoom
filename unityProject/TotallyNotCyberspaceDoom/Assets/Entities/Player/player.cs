@@ -97,18 +97,18 @@ public class player : MonoBehaviour {
 //	}
 
 	public static void WorldChange() {
-		switch (SceneManager.GetActiveScene().buildIndex) {
-			case 0: 
-				playMan.instance.StartRain();
-				break;
-			case 1:
-				playMan.instance.StartSnow();
-				break;
-			case 2:
-				playMan.instance.StartDark();
-				break;
+		if (!playMan.instance.onRain) {
+			playMan.instance.StartRain();
+			playMan.instance.onRain = false;
 		}
-//		gunScript.Setup();
+		else if (!playMan.instance.onSnow) {
+			playMan.instance.StartSnow();
+			playMan.instance.onSnow = false;
+		}
+		else if (!playMan.instance.onDark) {
+			playMan.instance.StartDark();
+			playMan.instance.onDark = false;
+		}
 	}
 
 	public void SetGun() {
