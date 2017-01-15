@@ -37,9 +37,17 @@
 					<ShortName>ambience5.wav</ShortName>
 					<Path>SFX/ambience5_9E69E797.wem</Path>
 				</File>
+				<File Id="219820858" Language="SFX">
+					<ShortName>SnowFootstep3.wav</ShortName>
+					<Path>SFX/SnowFootstep3_9E69E797.wem</Path>
+				</File>
 				<File Id="251053522" Language="SFX">
 					<ShortName>SnowAmbience1.wav</ShortName>
 					<Path>SFX/SnowAmbience1_9E69E797.wem</Path>
+				</File>
+				<File Id="316437612" Language="SFX">
+					<ShortName>SnowFootstep5.wav</ShortName>
+					<Path>SFX/SnowFootstep5_9E69E797.wem</Path>
 				</File>
 				<File Id="389132379" Language="SFX">
 					<ShortName>ambience4.wav</ShortName>
@@ -48,6 +56,10 @@
 				<File Id="424694750" Language="SFX">
 					<ShortName>ambience1.wav</ShortName>
 					<Path>SFX/ambience1_9E69E797.wem</Path>
+				</File>
+				<File Id="425606117" Language="SFX">
+					<ShortName>SnowFootstep2.wav</ShortName>
+					<Path>SFX/SnowFootstep2_9E69E797.wem</Path>
 				</File>
 				<File Id="512343843" Language="SFX">
 					<ShortName>ambience3.wav</ShortName>
@@ -65,9 +77,17 @@
 					<ShortName>SnowAmbience3.wav</ShortName>
 					<Path>SFX/SnowAmbience3_9E69E797.wem</Path>
 				</File>
+				<File Id="622020659" Language="SFX">
+					<ShortName>SnowFootstep1.wav</ShortName>
+					<Path>SFX/SnowFootstep1_9E69E797.wem</Path>
+				</File>
 				<File Id="637521793" Language="SFX">
 					<ShortName>Rain.wav</ShortName>
 					<Path>SFX/Rain_9E69E797.wem</Path>
+				</File>
+				<File Id="670029384" Language="SFX">
+					<ShortName>SnowFootstep6.wav</ShortName>
+					<Path>SFX/SnowFootstep6_9E69E797.wem</Path>
 				</File>
 				<File Id="764627016" Language="SFX">
 					<ShortName>ambience6.wav</ShortName>
@@ -76,6 +96,10 @@
 				<File Id="807596079" Language="SFX">
 					<ShortName>LaserShotgun2.wav</ShortName>
 					<Path>SFX/LaserShotgun2_9E69E797.wem</Path>
+				</File>
+				<File Id="838238911" Language="SFX">
+					<ShortName>SnowFootstep4.wav</ShortName>
+					<Path>SFX/SnowFootstep4_9E69E797.wem</Path>
 				</File>
 				<File Id="856116723" Language="SFX">
 					<ShortName>ambience2.wav</ShortName>

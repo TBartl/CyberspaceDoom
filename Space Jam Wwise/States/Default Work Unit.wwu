@@ -3,12 +3,12 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{7799CB02-96F6-4260-B6F7-1AFD1050C1B8}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="Planets" ID="{0A696B84-45A5-4E1D-862A-8941963415BF}">
+				<StateGroup Name="States" ID="{353653A4-282B-4B73-9B8D-FE22948CA2B7}">
 					<ChildrenList>
-						<State Name="None" ID="{A8E0E8FE-4A09-4B83-93ED-3F43F6F463BC}"/>
-						<State Name="Rain" ID="{8EC3CE38-E3C2-4DBA-8B46-6C9FEE41D2C3}"/>
-						<State Name="Ice" ID="{91EABC32-73CF-4D0F-96C2-6306D51AD1BD}"/>
-						<State Name="Shadow" ID="{7DBABD39-7DE9-4883-9619-9A0315ADED08}"/>
+						<State Name="None" ID="{61EE0EA2-52F0-4657-B972-824F350A877F}"/>
+						<State Name="IcePlanet" ID="{A9A2926D-1368-4AD9-93D6-E444A62139A2}"/>
+						<State Name="RainPlanet" ID="{1D322D62-032E-4C92-96FB-DE051A80CC33}"/>
+						<State Name="ShadowPlanet" ID="{3C672D6E-82B4-4A0B-BF3B-70CEA08145D6}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

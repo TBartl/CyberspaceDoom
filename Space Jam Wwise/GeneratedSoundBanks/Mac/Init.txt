@@ -1,11 +1,11 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	2962930650	Planets			\Default Work Unit\Planets	
+	1208172739	States			\Default Work Unit\States	
 
 State	ID	Name	State Group			Notes
-	344481046	Ice	Planets			
-	748895195	None	Planets			
-	2043403999	Rain	Planets			
-	3140781661	Shadow	Planets			
+	748895195	None	States			
+	1776102009	RainPlanet	States			
+	3354777067	ShadowPlanet	States			
+	3892807504	IcePlanet	States			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
