@@ -51,6 +51,7 @@
 				<Property Name="Music Transition List\{0E4300C8-C148-4AC0-8ACB-9D43F7C376D3}\Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{7508627E-2EED-4847-B647-14B3E8F9B96A}\Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{CE3CC041-4FFA-4DB8-8FFB-B812F1C14B48}\Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{D58D2BC6-3D8B-4FDB-9D37-9B14CC4900F9}\Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{D8566208-3D83-41B4-9E93-F6D00F43F147}\Expand States" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\Expanded_10_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\Expanded_11_1" Type="string" Value=""/>
@@ -78,7 +79,9 @@
 				<Property Name="ProjectExplorer\FirstVisible_4_1" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\FirstVisible_6_1" Type="string" Value="{C98E673F-A24C-48A8-960F-10565FFE70A0}"/>
 				<Property Name="ProjectExplorer\FirstVisible_8_1" Type="string" Value="{41093F77-829F-4D88-8601-E8B25F3D4781}"/>
+				<Property Name="SettingsUserOverride" Type="bool" Value="True"/>
 				<Property Name="SoundBank Manager\Expand States" Type="string" Value=""/>
+				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
