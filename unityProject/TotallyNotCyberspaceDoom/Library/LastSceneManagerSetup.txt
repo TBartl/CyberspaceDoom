@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Petes Jungle Gym.unity
+- path: Assets/Scenes/Snow.unity
   isLoaded: 1
   isActive: 1

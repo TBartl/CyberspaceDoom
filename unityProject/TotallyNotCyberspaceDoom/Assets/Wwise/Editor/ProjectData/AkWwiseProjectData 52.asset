@@ -21,7 +21,11 @@ MonoBehaviour:
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
+<<<<<<< HEAD
+  basePath: Audio\GeneratedSoundBanks
+=======
   basePath: Audio/GeneratedSoundBanks
+>>>>>>> 9845a672a1769261b375992f6153ebf60d88bc48
   language: English(US)
   defaultPoolSize: 4096
   lowerPoolSize: 2048

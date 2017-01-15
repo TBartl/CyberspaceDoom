@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData 48
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
+<<<<<<< HEAD
+  EventWwu: []
+  AuxBusWwu: []
+  StateWwu: []
+  SwitchWwu: []
+  BankWwu: []
+=======
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -205,11 +212,16 @@ MonoBehaviour:
         ObjectType: 7
       ID: 534561221
       Guid: badfea1a6b732041bd8b5d8785136824
+>>>>>>> 9845a672a1769261b375992f6153ebf60d88bc48
   ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
+<<<<<<< HEAD
+  basePath: Audio\GeneratedSoundBanks
+=======
   basePath: Audio/GeneratedSoundBanks
+>>>>>>> 9845a672a1769261b375992f6153ebf60d88bc48
   language: English(US)
   defaultPoolSize: 4096
   lowerPoolSize: 2048

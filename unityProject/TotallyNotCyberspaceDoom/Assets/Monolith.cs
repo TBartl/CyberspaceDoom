@@ -4,13 +4,23 @@ using UnityEngine;
 
 public class Monolith : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+	bool monolithActivated = false;
+	MeshRenderer mr;
+
+	void Awake() {
+		mr = this.GetComponent<MeshRenderer>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	void OnCollisionEnter(Collision coll) {
+
+		if (!monolithActivated &&
+			(coll.collider.tag == "Player" || coll.collider.tag == "Bullet") && 
+			transform.childCount == 0) {
+
+			Debug.Log("Doot");
+			mr.material = mr.materials[1];
+			Gate.s.MonolithActivated();
+			monolithActivated = true;
+		}
 	}
 }
