@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="120">
+	<RootPaths>
+		<ProjectRoot>/Users/PeteJurasek/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/spacejamu/Space Jam Wwise/</ProjectRoot>
+		<SourceFilesRoot>/Users/PeteJurasek/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/spacejamu/Space Jam Wwise/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/PeteJurasek/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/spacejamu/Space Jam Wwise/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/PeteJurasek/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Documents/spacejamu/Space Jam Wwise/GeneratedSoundBanks/Windows/</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="534561221" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MainSoundbank</ObjectPath>
+			<ShortName>MainSoundbank</ShortName>
+			<Path>MainSoundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep" MaxAttenuation="100.000000"/>
+				<Event Id="3982605422" Name="Laser" ObjectPath="\Events\Default Work Unit\Laser"/>
+				<Event Id="324443136" Name="Pistol" ObjectPath="\Events\Default Work Unit\Pistol"/>
+				<Event Id="51683977" Name="Shotgun" ObjectPath="\Events\Default Work Unit\Shotgun"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="161480498" Language="SFX">
+					<ShortName>LaserBeam1.wav</ShortName>
+					<Path>SFX/LaserBeam1_9E69E797.wem</Path>
+				</File>
+				<File Id="162266728" Language="SFX">
+					<ShortName>LaserPistol2.wav</ShortName>
+					<Path>SFX/LaserPistol2_9E69E797.wem</Path>
+				</File>
+				<File Id="510084522" Language="SFX">
+					<ShortName>LaserPistol1.wav</ShortName>
+					<Path>SFX/LaserPistol1_9E69E797.wem</Path>
+				</File>
+				<File Id="545781998" Language="SFX">
+					<ShortName>LaserShotgunNoTail.wav</ShortName>
+					<Path>SFX/LaserShotgunNoTail_9E69E797.wem</Path>
+				</File>
+				<File Id="807596079" Language="SFX">
+					<ShortName>LaserShotgun2.wav</ShortName>
+					<Path>SFX/LaserShotgun2_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2458A0AB-62C0-46D1-8FFD-23028BB16ECA}" SchemaVersion="75">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{2458A0AB-62C0-46D1-8FFD-23028BB16ECA}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2458A0AB-62C0-46D1-8FFD-23028BB16ECA}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Footsteps" ID="{FFA55E90-94E5-4A36-AF22-2BE5DC43D252}">
+					<ChildrenList>
+						<Switch Name="Ice" ID="{B58C524D-C6A0-4AAA-AB53-2FF37D522959}"/>
+						<Switch Name="Rain" ID="{1EC4AE95-B7FF-428D-86F8-D29C0D84D5D2}"/>
+						<Switch Name="Shadow" ID="{DC38C986-B4A8-401B-9B16-CDE5FB6B1F1B}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Ambiences" ID="{92502CF5-032A-4755-B53A-AE179BB63B53}">
+					<ChildrenList>
+						<Switch Name="Rain" ID="{09EA0157-195C-486E-A1C0-760E2F63FD0F}"/>
+						<Switch Name="Ice" ID="{12ACED8D-5C49-4205-800C-7F1DC837E588}"/>
+						<Switch Name="Shadow" ID="{EE4829B0-4D30-4CFB-A08E-32D09FD6E0F8}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

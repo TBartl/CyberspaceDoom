@@ -1,0 +1,21 @@
+Event	ID	Name			Wwise Object Path	Notes
+	51683977	Shotgun			\Default Work Unit\Shotgun	
+	324443136	Pistol			\Default Work Unit\Pistol	
+	1866025847	Footstep			\Default Work Unit\Footstep	
+	3982605422	Laser			\Default Work Unit\Laser	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2385628198	Footsteps			\Default Work Unit\Footsteps	
+
+Switch	ID	Name	Switch Group			Notes
+	344481046	Ice	Footsteps			
+	2043403999	Rain	Footsteps			
+	3140781661	Shadow	Footsteps			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	161480498	LaserBeam1	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Mac\SFX\LaserBeam1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Laser\LaserBeam1		419000
+	162266728	LaserPistol2	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Mac\SFX\LaserPistol2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pistol\LaserPistol2		127756
+	510084522	LaserPistol1	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Mac\SFX\LaserPistol1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pistol\LaserPistol1		176544
+	545781998	LaserShotgunNoTail	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Mac\SFX\LaserShotgunNoTail_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shotgun\LaserShotgunNoTail		149072
+	807596079	LaserShotgun2	Y:\Documents\spacejamu\Space Jam Wwise\.cache\Mac\SFX\LaserShotgun2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Shotgun\LaserShotgun2		159088
+
