@@ -6,6 +6,8 @@ using Rewired;
 [RequireComponent (typeof(Rigidbody))]
 public class player : MonoBehaviour {
 
+	public static bool started;
+
 	public float mouseSensitivityX = 3.5f;
 	public float mouseSensitivityY = 3.5f;
 	public float speed = 15f;
@@ -20,9 +22,11 @@ public class player : MonoBehaviour {
 	Rigidbody rigi;
 	bool onGround = true;
 
-	Player rewiredPlayer;
+	public static Player rewiredPlayer;
 
 	void Start() {
+		started = false;
+
 		camTrans = Camera.main.transform;
 		rigi = gameObject.GetComponent<Rigidbody>();
 		capColl = gameObject.GetComponent<CapsuleCollider>();
@@ -30,9 +34,11 @@ public class player : MonoBehaviour {
 	}
 
 	void Update() {
-		LookingUpdate();
-		MovingUpdate();
-		JumpingUpdate();
+		if (started) {
+			LookingUpdate();
+			MovingUpdate();
+			JumpingUpdate();
+		}
 	}
 
 	// fix this later with controller support

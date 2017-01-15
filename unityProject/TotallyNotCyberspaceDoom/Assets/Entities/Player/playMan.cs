@@ -12,6 +12,9 @@ public class playMan : MonoBehaviour {
 
 	public Canvas startMenu;
 
+	AkInitSettings initSettings;
+	AkPlatformInitSettings platformInitSettings;
+
 	void Start () {
 		onRain = false;
 		onSnow = false;
@@ -28,14 +31,18 @@ public class playMan : MonoBehaviour {
 
 
 	public void StartRain() {
+		
 		onRain = true;
 //		AkSoundEngine.SetState("Planets", "Rain");
+		AkSoundEngine.SetState("Planets", "Ice");
 		AkSoundEngine.SetSwitch("Ambiences", "Ice", gameObject);
 
+
+		startMenu.enabled = false;
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
 
-		startMenu.enabled = false;
+		player.started = true;
 	}
 
 	public void StartSnow() {
