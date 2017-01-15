@@ -74,14 +74,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1143209981382162}
-  m_LocalRotation: {x: -0.35608992, y: 0.6952522, z: 0.20818534, w: 0.5886283}
-  m_LocalPosition: {x: -20.2, y: 19.85, z: -3.46}
+  m_LocalRotation: {x: 0.45393583, y: 0.48242605, z: 0.3101574, w: -0.6819163}
+  m_LocalPosition: {x: 19, y: 11.37, z: -7.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4936586729230052}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 225.129, y: -71.800995, z: -200.759}
+  m_LocalEulerAnglesHint: {x: -66.686005, y: -431.983, z: 2.1690001}
 --- !u!4 &4386284707664382
 Transform:
   m_ObjectHideFlags: 1
@@ -251,6 +251,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc6c135fd62ba50438b89d1ac680fbd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnRate: 14
+  increasedSpawnRate: 4
+  enemies:
+  - {fileID: 1076493504490486, guid: 8f940ae81685ed643b17157f8a0d707b, type: 2}
+  - {fileID: 1286226997218174, guid: 5bbca5de20b40944d978cdec6e9e53bf, type: 2}
 --- !u!114 &114495813111521280
 MonoBehaviour:
   m_ObjectHideFlags: 1

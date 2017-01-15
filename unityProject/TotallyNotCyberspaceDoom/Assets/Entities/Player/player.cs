@@ -113,5 +113,7 @@ public class player : MonoBehaviour {
 
 	public void SetGun() {
 		gunScript.Setup();
+		PlayerHealth health = this.GetComponent<PlayerHealth>();
+		health.ResetHealth();
 	}
 }
