@@ -28,14 +28,16 @@ public class playMan : MonoBehaviour {
 
 		Application.targetFrameRate = 80;
 	}
+		
 
 
 	public void StartRain() {
-		
 		onRain = true;
 //		AkSoundEngine.SetState("Planets", "Rain");
-		AkSoundEngine.SetState("Planets", "Ice");
-		AkSoundEngine.SetSwitch("Ambiences", "Ice", gameObject);
+//		AkSoundEngine.SetState("Planets", "Ice");
+		AkSoundEngine.PostEvent("RainAmbience", gameObject);
+
+//		AkSoundEngine.SetSwitch("Ambiences", "Ice", gameObject);
 
 
 		startMenu.enabled = false;
@@ -47,11 +49,13 @@ public class playMan : MonoBehaviour {
 
 	public void StartSnow() {
 		onSnow = true;
-		AkSoundEngine.SetState("Planets", "Ice");
+//		AkSoundEngine.SetState("Planets", "Ice");
+		AkSoundEngine.PostEvent("IceAmbience", gameObject);
 	}
 
 	public void StartDark() {
 		onDark = true;
-		AkSoundEngine.SetState("Planets", "Shadow");
+//		AkSoundEngine.SetState("Planets", "Shadow");
+		AkSoundEngine.PostEvent("ShadowAmbience", gameObject);
 	}
 }

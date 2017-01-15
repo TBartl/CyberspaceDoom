@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Rewired;
+using UnityEngine.SceneManagement;
 
 [RequireComponent (typeof(Rigidbody))]
 public class player : MonoBehaviour {
 
 	public static bool started;
+	public gun gunScript;
 
 	public float mouseSensitivityX = 3.5f;
 	public float mouseSensitivityY = 3.5f;
@@ -25,6 +27,7 @@ public class player : MonoBehaviour {
 	public static Player rewiredPlayer;
 
 	void Start() {
+		DontDestroyOnLoad(gameObject);
 		started = false;
 
 		camTrans = Camera.main.transform;
@@ -67,4 +70,17 @@ public class player : MonoBehaviour {
 	void FixedUpdate() {
 		rigi.MovePosition(rigi.position + transform.TransformDirection(moveAmount) * Time.fixedDeltaTime);
 	}
+
+
+	//temp progress
+	void OnTriggerEnter(Collider col) {
+		if (col.gameObject.tag == "progress") {
+			SceneManager.LoadScene("final_snow");
+			playMan.instance.StartSnow();
+			gunScript.Setup();
+		}
+	}
+
+
+
 }

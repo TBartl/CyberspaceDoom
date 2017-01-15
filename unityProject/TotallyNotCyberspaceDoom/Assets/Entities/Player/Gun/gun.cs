@@ -34,6 +34,10 @@ public class gun : MonoBehaviour {
 	void Awake() {
 		anim = GetComponent<Animator>();
 		tempShotTime = timeBetweenShots;
+		Setup();
+	}
+
+	public void Setup() {
 		PoolBullets();
 		PoolShotgunBullets();
 	}
