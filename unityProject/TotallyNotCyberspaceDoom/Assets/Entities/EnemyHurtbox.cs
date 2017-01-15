@@ -7,12 +7,14 @@ public class EnemyHurtbox : MonoBehaviour {
 	Color originalColor;
 	public int health;
 	public float knockbackDist = .5f;
+	Enemy e;
 
 
 	// Use this for initialization
 	void Start () {
 		mr = GetComponentInChildren<Renderer>();
 		originalColor = mr.material.GetColor("_Vertex_color");
+		e = this.GetComponent<Enemy>();
 		
 	}
 	
@@ -24,6 +26,8 @@ public class EnemyHurtbox : MonoBehaviour {
 	void OnCollisionEnter(Collision collision) {
 		if (collision.collider.tag == "Bullet") {
 			health -= 1;
+			if (e)
+				e.chasing = true;
 			if (health <= 0) {
 				Destroy(this.gameObject);
 				return;

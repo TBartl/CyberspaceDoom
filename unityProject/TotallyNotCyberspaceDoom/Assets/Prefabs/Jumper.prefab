@@ -294,15 +294,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1286226997218174}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.3, y: 9.3, z: 2.54}
+  m_LocalRotation: {x: -0.09229071, y: 0.40687835, z: 0.28190294, w: 0.86398107}
+  m_LocalPosition: {x: -15.6, y: 22.18, z: 0.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4623139835713892}
   - {fileID: 4925802926519372}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -22.885, y: 44.964, z: 26.565}
 --- !u!4 &4445413852093512
 Transform:
   m_ObjectHideFlags: 1
@@ -524,7 +524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 393b3bc0030727f4a85ab0326476b0b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
+  health: 21
   knockbackDist: 0.5
 --- !u!114 &114380094649136774
 MonoBehaviour:
@@ -549,7 +549,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ce4c0dc8ceb36243bffd0b5c1653be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aggroRadius: 10
+  aggroRadius: 15
+  chasing: 0
   maxTimeToJump: 2.5
   jumpStrength: 18
 --- !u!135 &135655235093064226

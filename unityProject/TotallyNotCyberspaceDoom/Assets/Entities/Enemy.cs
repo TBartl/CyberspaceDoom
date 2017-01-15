@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour {
 	protected Rigidbody rigid;
 	protected Transform targetPlayer;
 	public float aggroRadius = 10f;
-	bool chasing = false;
+	public bool chasing = false;
 
 	// Use this for initialization
 	void Start() {
@@ -20,8 +20,10 @@ public class Enemy : MonoBehaviour {
 	}
 
 	void CheckPlayerClose() {
-		if (chasing != InRangeOfPlayer())
-			chasing = !chasing;
+		if (!chasing) {
+			if (InRangeOfPlayer())
+				chasing = true;
+		}
 		else {
 			ChasePlayer();
 		}
@@ -31,6 +33,6 @@ public class Enemy : MonoBehaviour {
 	}
 
 	bool InRangeOfPlayer() {
-		return Vector3.Distance(transform.position, targetPlayer.position) <= aggroRadius;
+		return (Vector3.Distance(transform.position, targetPlayer.position) <= aggroRadius);
 	}
 }

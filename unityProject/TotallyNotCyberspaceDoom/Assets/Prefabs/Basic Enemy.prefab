@@ -174,14 +174,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1076493504490486}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 93.9, y: -36.5, z: -50.3}
+  m_LocalRotation: {x: 0.104587965, y: 0.28095144, z: 0.44258332, w: -0.84513175}
+  m_LocalPosition: {x: 19.781778, y: 16.567045, z: -3.5740926}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4470017538464006}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -25.18, y: -24.989, z: -49.614002}
 --- !u!4 &4167266294201452
 Transform:
   m_ObjectHideFlags: 1
@@ -350,7 +350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79acd15321e43904490a086dc60df4f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aggroRadius: 7
+  aggroRadius: 15
+  chasing: 0
   mesh: {fileID: 4470017538464006}
   speed: 10
   rotationSpeed: 5
@@ -365,7 +366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 393b3bc0030727f4a85ab0326476b0b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
+  health: 21
   knockbackDist: 0.5
 --- !u!114 &114987416084248834
 MonoBehaviour:
