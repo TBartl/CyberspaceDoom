@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/coop_scene.unity
+- path: Assets/Petes Jungle Gym.unity
   isLoaded: 1
   isActive: 1

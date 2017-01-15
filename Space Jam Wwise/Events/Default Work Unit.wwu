@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5055283F-1BD9-4065-BD06-E03AEDDC8BD1}" SchemaVersion="75">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{5055283F-1BD9-4065-BD06-E03AEDDC8BD1}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5055283F-1BD9-4065-BD06-E03AEDDC8BD1}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Laser" ID="{834FEA80-424E-49B5-B53D-836004B6692B}">
+					<ChildrenList>
+						<Action Name="Play" ID="{BE9DE263-488D-4DBD-B75F-0B1B98807DFE}" ShortID="117288183" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{30CE5746-ACE7-44BD-9CA2-C6097A058CAE}" Global="false">
+									<ObjectRef Name="Laser" ID="{864C51EC-37E0-48E3-80E3-16F957077334}" WorkUnitID="{02BBB1ED-E89F-4ADE-A1B7-ECD983C3810F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Footstep" ID="{F60B66A3-8FC6-4C78-BDB1-59F57769BA58}">
+					<ChildrenList>
+						<Action Name="Play" ID="{D0772EF0-795D-40A8-AD32-8664F7000AC8}" ShortID="537050800" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{EB161F80-D91C-4F05-939A-2CECDC335C02}" Global="false">
+									<ObjectRef Name="Footstep" ID="{657A4761-1E4F-45EC-B602-286DA1D0D942}" WorkUnitID="{02BBB1ED-E89F-4ADE-A1B7-ECD983C3810F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Shotgun" ID="{2BFCED79-3110-4936-AE10-0B7A309DDAA5}">
+					<ChildrenList>
+						<Action Name="Play" ID="{3B5343AC-2574-47F9-9071-3D773AC308F7}" ShortID="572358110" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{7CAD0604-E773-46F9-8C65-0E34AB9595C4}" Global="false">
+									<ObjectRef Name="Shotgun" ID="{946C3393-2B7C-426D-88CD-2C6DF207EAF4}" WorkUnitID="{02BBB1ED-E89F-4ADE-A1B7-ECD983C3810F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pistol" ID="{A39CE3B6-806F-4ADB-8370-3F5FFB5BD91F}">
+					<ChildrenList>
+						<Action Name="Play" ID="{B7813E57-07A2-4C44-AA1D-E4A99E63233F}" ShortID="258140614" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{16EBDE4F-1185-4152-A688-E567347235A7}" Global="false">
+									<ObjectRef Name="Pistol" ID="{8A7B16BE-0AAE-40FA-9426-F93AAC9D452D}" WorkUnitID="{02BBB1ED-E89F-4ADE-A1B7-ECD983C3810F}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
