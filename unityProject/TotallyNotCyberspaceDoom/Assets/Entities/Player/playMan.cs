@@ -35,8 +35,8 @@ public class playMan : MonoBehaviour {
 		onRain = true;
 //		AkSoundEngine.SetState("Planets", "Rain");
 		AkSoundEngine.SetState("States", "RainPlanet");
-		AkSoundEngine.RenderAudio();
-
+//		AkSoundEngine.RenderAudio();
+		AkSoundEngine.PostEvent("PlayMusic", gameObject);
 		AkSoundEngine.PostEvent("RainAmbience", gameObject);
 
 //		AkSoundEngine.SetSwitch("Ambiences", "Ice", gameObject);

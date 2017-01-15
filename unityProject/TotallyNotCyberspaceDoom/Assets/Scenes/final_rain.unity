@@ -6448,6 +6448,20 @@ Prefab:
       propertyPath: ShapeModule.enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4364058626425978, guid: abfa4fbbd7f1b4bbba0306d0b52e5257, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 199759199585479490, guid: abfa4fbbd7f1b4bbba0306d0b52e5257,
+        type: 2}
+      propertyPath: m_RenderMode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 199759199585479490, guid: abfa4fbbd7f1b4bbba0306d0b52e5257,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: abfa4fbbd7f1b4bbba0306d0b52e5257, type: 2}
   m_IsPrefabParent: 0

@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b903eecf8984640cf8e6896a224a7913, type: 3}
-  m_Name: AkWwiseProjectData 83
+  m_Name: AkWwiseProjectData 85
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
@@ -215,7 +215,10 @@ MonoBehaviour:
         ObjectType: 7
       ID: 534561221
       Guid: badfea1a6b732041bd8b5d8785136824
-  ExpandedItems: []
+  ExpandedItems:
+  - /Space Jam Wwise
+  - /Space Jam Wwise/Events
+  - /Space Jam Wwise/Events/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
