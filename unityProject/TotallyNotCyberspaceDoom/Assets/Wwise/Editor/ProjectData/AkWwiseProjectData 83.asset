@@ -16,8 +16,13 @@ MonoBehaviour:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{5055283F-1BD9-4065-BD06-E03AEDDC8BD1}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 1384688512
     m_lastTimePart2: -1999356670
+=======
+    m_lastTimePsrt1: 1104753920
+    m_lastTimePart2: -1999356668
+>>>>>>> ed37a75de6568c5315685fce810dc41c4b90136e
     List:
     - Name: Footstep
       Path: Default Work Unit/Footstep
@@ -59,6 +64,19 @@ MonoBehaviour:
       ID: 324443136
       Guid: b6e39ca36f80db4a83703f5ffb5bd91f
       maxAttenuation: 0
+<<<<<<< HEAD
+=======
+    - Name: Play
+      Path: Default Work Unit/Play
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play
+        ObjectType: 3
+      ID: 1256202815
+      Guid: 824c305b63b79146882fdcb8de932e76
+      maxAttenuation: 0
+>>>>>>> ed37a75de6568c5315685fce810dc41c4b90136e
     - Name: PlayMusic
       Path: Default Work Unit/PlayMusic
       PathAndIcons:
@@ -103,15 +121,25 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D719BD71-1F27-4EB1-86C1-D703E5A2C9F9}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -1417015808
     m_lastTimePart2: -1999356876
+=======
+    m_lastTimePsrt1: -141783168
+    m_lastTimePart2: -1999356716
+>>>>>>> ed37a75de6568c5315685fce810dc41c4b90136e
     List: []
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{7799CB02-96F6-4260-B6F7-1AFD1050C1B8}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 1754623104
     m_lastTimePart2: -1999356672
+=======
+    m_lastTimePsrt1: -1435376896
+    m_lastTimePart2: -1999356673
+>>>>>>> ed37a75de6568c5315685fce810dc41c4b90136e
     List:
     - Name: States
       Path: Default Work Unit/States
@@ -146,7 +174,11 @@ MonoBehaviour:
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{2458A0AB-62C0-46D1-8FFD-23028BB16ECA}'
+<<<<<<< HEAD
     m_lastTimePsrt1: -326554240
+=======
+    m_lastTimePsrt1: -1706554240
+>>>>>>> ed37a75de6568c5315685fce810dc41c4b90136e
     m_lastTimePart2: -1999356709
     List:
     - Name: Ambiences
@@ -203,8 +235,13 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A6837174-422B-45B7-B2EE-1DB92D881644}'
+<<<<<<< HEAD
     m_lastTimePsrt1: 799459584
     m_lastTimePart2: -1999356677
+=======
+    m_lastTimePsrt1: 1104753920
+    m_lastTimePart2: -1999356668
+>>>>>>> ed37a75de6568c5315685fce810dc41c4b90136e
     List:
     - Name: MainSoundbank
       Path: Default Work Unit/MainSoundbank
@@ -215,7 +252,14 @@ MonoBehaviour:
         ObjectType: 7
       ID: 534561221
       Guid: badfea1a6b732041bd8b5d8785136824
+<<<<<<< HEAD
   ExpandedItems: []
+=======
+  ExpandedItems:
+  - /Space Jam Wwise
+  - /Space Jam Wwise/Events
+  - /Space Jam Wwise/Events/Default Work Unit
+>>>>>>> ed37a75de6568c5315685fce810dc41c4b90136e
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1

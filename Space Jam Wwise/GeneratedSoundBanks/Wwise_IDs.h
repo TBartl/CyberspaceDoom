@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID ICEAMBIENCE = 1952003650U;
         static const AkUniqueID LASER = 3982605422U;
         static const AkUniqueID PISTOL = 324443136U;
+        static const AkUniqueID PLAYMUSIC = 417627684U;
         static const AkUniqueID RAINAMBIENCE = 3812882407U;
         static const AkUniqueID SHADOWAMBIENCE = 693161857U;
         static const AkUniqueID SHOTGUN = 51683977U;

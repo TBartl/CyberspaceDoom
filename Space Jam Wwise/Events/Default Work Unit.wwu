@@ -105,6 +105,11 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play" ID="{5B304C82-B763-4691-882F-DCB8DE932E76}">
+					<ChildrenList>
+						<Action Name="Play" ID="{31B7450C-E1B4-47F9-9BEF-67A2E274C7C4}" ShortID="833919775" Type="Play" Scope="One" Global="false"/>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
