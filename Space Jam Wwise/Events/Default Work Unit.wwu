@@ -94,6 +94,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="PlayMusic" ID="{7724B0CA-52FA-4867-AFCA-0372D92887AB}">
+					<ChildrenList>
+						<Action Name="Play" ID="{997471A1-C2F0-4873-9A2C-6ABFEFB12870}" ShortID="621261614" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{A974D64D-D5FE-432A-AF8A-4FCF85EBE789}" Global="false">
+									<ObjectRef Name="Music" ID="{D58D2BC6-3D8B-4FDB-9D37-9B14CC4900F9}" WorkUnitID="{CB478AD5-F4ED-48C6-A48E-009B2E64F62A}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
