@@ -478,6 +478,10 @@ PlayerSettings:
   XboxOnePersistentLocalStorageSize: 0
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Build: 0
+    Collab: 0
+    ErrorHub: 0
+    Hub: 0
     UNet: 1
   cloudProjectId: b3889120-83d2-46fd-91b3-34e15688af12
   projectName: TotallyNotCyberspaceDoom
