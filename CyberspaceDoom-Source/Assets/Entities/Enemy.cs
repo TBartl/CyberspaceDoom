@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour {
 	// Use this for initialization
 	void Start() {
 		rigid = GetComponent<Rigidbody>();
-		targetPlayer = GameObject.Find("player").transform;
+		targetPlayer = GameObject.Find("Player").transform;
 	}
 
 	// Update is called once per frame

@@ -525,7 +525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 21
-  knockbackDist: 0.5
+  knockbackDist: 0.3
 --- !u!114 &114380094649136774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -534,10 +534,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1286226997218174}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34f23eda405204e6fa33417a66832507, type: 3}
+  m_Script: {fileID: 11500000, guid: efaec106cb324490dae854a6e6f0c751, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravity: -10
+  gravity: 20
 --- !u!114 &114806366367507384
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -549,7 +549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ce4c0dc8ceb36243bffd0b5c1653be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aggroRadius: 15
+  aggroRadius: 20
   chasing: 0
   maxTimeToJump: 2.5
   jumpStrength: 18
@@ -595,6 +595,7 @@ SkinnedMeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0

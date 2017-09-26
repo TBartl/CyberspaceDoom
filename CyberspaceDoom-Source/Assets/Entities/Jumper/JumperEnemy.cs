@@ -16,7 +16,7 @@ public class JumperEnemy : Enemy {
 		anim.SetFloat("Velocity", Vector3.Dot(rigid.velocity.normalized, transform.up));
 		if (canJump) {
 			Vector3 direction = Vector3.zero;
-			direction += Vector3.up * 2f;
+			direction += Vector3.up * 1.8f;
 			direction += (targetPlayer.position - this.transform.position).normalized;
 			direction = direction.normalized;
 			rigid.velocity = direction * jumpStrength;
@@ -25,6 +25,13 @@ public class JumperEnemy : Enemy {
 			StartCoroutine(JustJumped());
 		}
 	}
+
+    IEnumerator MaintainVelocityForABit(Vector3 velocity) {
+        for (float t = 0; t < .2f; t += Time.deltaTime) {
+            rigid.velocity = velocity;
+            yield return null;
+        }
+    }
 
 	IEnumerator JustJumped() {
 		canJump = false;

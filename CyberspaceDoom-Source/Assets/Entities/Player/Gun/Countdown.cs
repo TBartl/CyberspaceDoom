@@ -17,6 +17,9 @@ public class Countdown : MonoBehaviour {
 	void Update () {
 		remainingTime -= Time.deltaTime;
 		text.text = Mathf.RoundToInt(remainingTime).ToString();
+        if (remainingTime <= 0) {
+            text.text = "XX";
+        }
 
 	}
 }

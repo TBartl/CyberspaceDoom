@@ -1,119 +1,41 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using Rewired;
 using UnityEngine.SceneManagement;
 
 [RequireComponent (typeof(Rigidbody))]
-public class player : MonoBehaviour {
+public class Player : MonoBehaviour {
 
-	public static player instance;
-
-	public static bool started = true;
-	public gun gunScript;
-
-	public float mouseSensitivityX = 3.5f;
-	public float mouseSensitivityY = 3.5f;
-	public float speed = 15f;
-	public float jumpForce = 550f;
-	public LayerMask groundMask;
-
-	CapsuleCollider capColl;
-	Transform camTrans;
+    public Vector2 sensitivity = new Vector2(3.5f, 3.5f);
+    
+	Transform cameraTransform;
 	float vertRot;
-	Vector3 moveAmount;
-	Vector3 smoothMovment;
-	Rigidbody rigi;
-	bool onGround = true;
 
-//	public static Player rewiredPlayer;
+    public float acceleration = 1f;
+    public float maxMoveSpeed = 15f;
+    Rigidbody rigid;
 
 	void Start() {
-		instance = this;
-		camTrans = Camera.main.transform;
-		rigi = gameObject.GetComponent<Rigidbody>();
-		capColl = gameObject.GetComponent<CapsuleCollider>();
-//		rewiredPlayer = ReInput.players.GetPlayer(0);
-		DontDestroyOnLoad(gameObject);
+		cameraTransform = Camera.main.transform;
+		rigid = gameObject.GetComponent<Rigidbody>();
 	}
 
 	void Update() {
-		if (started) {
-			if (!playMan.instance.paused) {
-				LookingUpdate();
-				MovingUpdate();
-				JumpingUpdate();
-			}
-			if (Input.GetButtonDown("Pause")) playMan.instance.TogglePause();
-		}
+		LookingUpdate();
 	}
 
 	// fix this later with controller support
 	void LookingUpdate() {
-		transform.Rotate(Vector3.up * Input.GetAxis("CamHorz") * mouseSensitivityX);
-		vertRot += Input.GetAxis("CamVert") * mouseSensitivityY;
+		transform.Rotate(Vector3.up * Input.GetAxisRaw("Mouse X") * sensitivity.x);
+		vertRot += Input.GetAxisRaw("Mouse Y") * sensitivity.y;
 		vertRot = Mathf.Clamp(vertRot, -60f, 60f);
-		camTrans.localEulerAngles = Vector3.left * vertRot;
+		cameraTransform.localEulerAngles = Vector3.left * vertRot;
 	}
-
-	void MovingUpdate() {
-		Vector3 moveDir = new Vector3(Input.GetAxis("Horz"), 0, Input.GetAxisRaw("Vert")).normalized;
-		Vector3 targetMoveAmount = moveDir * speed;
-		// the smaller this last value is the better
-		moveAmount = Vector3.SmoothDamp(moveAmount, targetMoveAmount, ref smoothMovment, 0.15f);
-
-//		if (moveDir != Vector3.zero) AkSoundEngine.PostEvent("Footsteps", gameObject);
-
-	}
-
-	void JumpingUpdate() {
-		if (Input.GetButtonDown("Jump") && onGround) rigi.AddForce(transform.up * jumpForce);
-		onGround = false;
-		Ray groundRay = new Ray(transform.position, -transform.up);
-		RaycastHit groundHit;
-		if (Physics.Raycast(groundRay, out groundHit, (capColl.height/2) + 0.1f, groundMask)) onGround = true;
-	}
+    
 
 	void FixedUpdate() {
-		rigi.MovePosition(rigi.position + transform.TransformDirection(moveAmount) * Time.fixedDeltaTime);
-	}
-
-
-	//change worlds
-//	void OnTriggerEnter(Collider col) {
-//		if (col.gameObject.tag == "progress") {
-//			if (playMan.instance.onRain) {
-//				SceneManager.LoadScene("final_snow");
-//				playMan.instance.StartSnow();
-//				playMan.instance.onRain = false;
-//			}
-//			else if (playMan.instance.onSnow) {
-//				SceneManager.LoadScene("final_dark");
-//				playMan.instance.StartDark();
-//				playMan.instance.onSnow = false;
-//			}
-//			gunScript.Setup();
-//		}
-//	}
-
-	public static void WorldChange() {
-		if (!playMan.instance.onRain) {
-			playMan.instance.StartRain();
-			playMan.instance.onRain = false;
-		}
-		else if (!playMan.instance.onSnow) {
-			playMan.instance.StartSnow();
-			playMan.instance.onSnow = false;
-		}
-		else if (!playMan.instance.onDark) {
-			playMan.instance.StartDark();
-			playMan.instance.onDark = false;
-		}
-	}
-
-	public void SetGun() {
-		gunScript.Setup();
-		PlayerHealth health = this.GetComponent<PlayerHealth>();
-		health.ResetHealth();
+        Vector3 moveDirection = transform.TransformDirection(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized);
+        if (Vector3.Dot(moveDirection, rigid.velocity.normalized) * rigid.velocity.magnitude < maxMoveSpeed)
+            rigid.velocity += moveDirection * acceleration * Time.deltaTime;
 	}
 }

@@ -8,22 +8,9 @@ public class PlayerHealth : MonoBehaviour {
 	public float invincibilityFrames = 1f;
 	bool canGetHit = true;
 	public List<MeshRenderer> hearts;
-
-	public SpriteRenderer heartPlane;
+	public SpriteRenderer redFlashSr;
+	Vector2 redFlashRange = new Vector2(0, .4f);
 	public GameObject gun;
-	public player playerMove;
-
-	public Color lowOpacity;
-	public Color highOpacity;
-
-	void Update() {
-		if (Input.GetKeyDown(KeyCode.H)) {
-			int nextScenceIndex = 0;
-			SceneManager.LoadScene(nextScenceIndex);
-			player.WorldChange();
-			player.instance.SetGun();
-		}
-	}
 
 	void OnCollisionEnter(Collision collision) {
 		if (collision.collider.tag == "Enemy" && canGetHit) {
@@ -31,49 +18,43 @@ public class PlayerHealth : MonoBehaviour {
 			if (health >= 0) {
 				hearts[health].enabled = false;
 			}
-			StartCoroutine(TakeDamage());
-
 			StartCoroutine(Invincibility());
+			StartCoroutine(FlashRed());
 			if (health == 0) {
-				StartCoroutine(Die());
+				StartCoroutine(RestartLevel());
+
 			}
 		}
 	}
-
+	
 	IEnumerator Invincibility() {
 		canGetHit = false;
 		yield return new WaitForSeconds(invincibilityFrames);
 		canGetHit = true;
 	}
+	IEnumerator FlashRed() {
+		Color c = Color.red;
+		c.a = redFlashRange.y;
+		redFlashSr.color = c;
 
-	IEnumerator TakeDamage() {
-		heartPlane.color = highOpacity;
-		for (float t = 0; t < invincibilityFrames; t += Time.deltaTime) {
-			heartPlane.color = Color.Lerp(highOpacity, lowOpacity, t / invincibilityFrames);
+		float maxT = invincibilityFrames;
+		for (float t = 0; t < maxT; t += Time.deltaTime) {
+			c.a = Mathf.Lerp(redFlashRange.y, redFlashRange.x, t/maxT);
+			redFlashSr.color = c;
 			yield return null;
 		}
-		heartPlane.color = lowOpacity;
+
+		c.a = redFlashRange.x;
+		redFlashSr.color = c;
+
 	}
 
-	IEnumerator Die() {
-		playerMove.enabled = false;
-		gun.SetActive(false);
-		yield return new WaitForSeconds(2);
+	IEnumerator RestartLevel() {
+		Destroy(gun);
+		Destroy(this.GetComponent<Player>());
+		yield return new WaitForSeconds(.8f);
+		int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+		SceneManager.LoadScene(sceneIndex);
 
-		int nextScenceIndex = SceneManager.GetActiveScene().buildIndex;
-		SceneManager.LoadScene(nextScenceIndex);
-		player.WorldChange();
-		player.instance.SetGun();
-		hearts[health].enabled = false;
-
-		playerMove.enabled = true;
-		gun.SetActive(true);
-	}
-	
-	public void ResetHealth() {
-		health = 3;
-		for (int i = 0; i <3; i++) {
-			hearts[health].enabled = true;
-		}
 	}
 }

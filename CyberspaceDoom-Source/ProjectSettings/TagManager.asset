@@ -4,12 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Monolith
   - Bullet
-  - progress
-  - Enemy
   - planet
-  - spawn
+  - Enemy
+  - Monolith
   layers:
   - Default
   - TransparentFX
@@ -19,7 +17,7 @@ TagManager:
   - UI
   - 
   - 
-  - ground
+  - Planet
   - 
   - 
   - 

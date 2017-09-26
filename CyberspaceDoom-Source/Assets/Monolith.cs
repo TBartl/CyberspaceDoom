@@ -8,6 +8,7 @@ public class Monolith : MonoBehaviour {
 	MeshRenderer mr;
 	public float spawnRate = 14;
 	public float increasedSpawnRate = 4;
+    public int startSpawn = 2;
 	bool useIncreasedSpawn = false;
 	public List<GameObject> enemies;
 
@@ -18,26 +19,38 @@ public class Monolith : MonoBehaviour {
 
 	}
 
-	void OnCollisionEnter(Collision coll) {
+    void Update() {
+        if (!monolithActivated && transform.childCount == 0) {
+            mr.material = mr.materials[1];
+            Gate.s.MonolithActivated();
+            monolithActivated = true;
+        }
+    }
 
-		if (!monolithActivated &&
-			(coll.collider.tag == "Player" || coll.collider.tag == "Bullet") &&
-			transform.childCount == 0) {
+	//void OnCollisionEnter(Collision coll) {
+	//	if (!monolithActivated &&
+	//		(coll.collider.tag == "Player" || coll.collider.tag == "Bullet") &&
+	//		transform.childCount == 0) {
+ //           mr.material = mr.materials[1];
+ //           Gate.s.MonolithActivated();
+ //           monolithActivated = true;
 
-			mr.material = mr.materials[1];
-			Gate.s.MonolithActivated();
-			monolithActivated = true;
-		}
-	}
+ //       }
+	//}
 
 	IEnumerator SpawnEnemies() {
+        for (int i = 0; i < startSpawn; i++) {
+            SpawnRandomEnemy();
+        }
 		while (true) {
-			SpawnRandomEnemy();
-			yield return new WaitForSeconds(GetSpawnRate());
+            yield return new WaitForSeconds(GetSpawnRate());
+            SpawnRandomEnemy();
 		}
 	}
 
 	void SpawnRandomEnemy() {
+        if (enemies.Count == 0)
+            return;
 		int enemyIndex = Random.Range(0, enemies.Count);
 		Vector2 circle = Random.insideUnitCircle * 10f;
 		Vector3 position = this.transform.position + transform.TransformVector(Vector3.up * 10f + new Vector3(circle.x, 0, circle.y));

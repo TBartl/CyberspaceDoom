@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 114813895951248030}
   - component: {fileID: 114070071003555174}
   m_Layer: 10
-  m_Name: bullet
+  m_Name: Bullet
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -264,10 +264,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1374383278245078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34f23eda405204e6fa33417a66832507, type: 3}
+  m_Script: {fileID: 11500000, guid: efaec106cb324490dae854a6e6f0c751, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravity: -2
+  gravity: 4
 --- !u!135 &135281531537447630
 SphereCollider:
   m_ObjectHideFlags: 1
